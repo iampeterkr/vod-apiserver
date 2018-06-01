@@ -3,7 +3,7 @@
 ''' [완료]  print를 logging 모듈을 사용하여 대체..'''
 '''        logging reference :  http://www.jinniahn.com/2016/10/python-logger.html '''
 ''' [완료] 회원별 LIST 조회하는 기능 구현 '''
-''' [진행중] 회원 Detail 조회하는 기능 구현 '''
+''' [진행중] UrlCheckView -> Common , List, Detail, 로 분리  '''
 
 from rest_framework import viewsets
 from .models import TBCP_MEMBER_INFO, TBCP_MEMBER_LIST_STAT_INFO, TBCP_MARKET_META_INFO, TBCP_PRODUCT_META_INFO, TBCP_ITEM_META_INFO, TBCP_MEMBER_LIST_DETAIL_INFO
@@ -86,6 +86,8 @@ class TBCP_MEMBER_LIST_STAT_INFO_ViewSet(viewsets.ModelViewSet):
         # URL Check, 입력된 값이 기본 URL 메타 값이 맞는지 사전 확인 
         rtUrlCheck = {}
         rtUrlCheck = UrlCheckView(v_market, v_product, v_member, v_date, v_item)
+        #URL COMMON MEMTA CHECK
+        #URL MEMBER'S LIST CHECK
 
 
         if rtUrlCheck['error'] != constant.CHECK_OK:
@@ -191,7 +193,9 @@ class TBCP_MEMBER_LIST_DETAIL_INFO_ViewSet(viewsets.ModelViewSet):
         # URL Check, 입력된 값이 기본 URL 메타 값이 맞는지 사전 확인 
         rtUrlCheck = {}
         rtUrlCheck = UrlCheckView(v_market, v_product, v_member, v_date, v_item)
- 
+        #URL COMMON MEMTA CHECK ('UrlCheckViewCommon()')
+        #URL MEMBER'S DETAIL LIST CHECK ('UrlCheckViewDetail()')
+
 
 
 
@@ -200,16 +204,25 @@ class TBCP_MEMBER_LIST_DETAIL_INFO_ViewSet(viewsets.ModelViewSet):
 
 
 # URL PATH META IFNO CHECK
+# UrlCheckView 를 아래 3가지 기능으로 분리    
+# CHECK (공통)   메타값  'URL PATH' IN TBCP_*_META_TABLE or NOT 
+# CHECK (LIST)  리스트  'URL PATH' IN TBCP_MEMBER_LIST_STAT_INFO
+# CHECK (DETAIL)데이타  'URL PATH' IN TBCP_MEMBER_LIST_DETAIL_INFO
 def UrlCheckView(v_market, v_product, v_member, v_date, v_item):
     # return {'error':constant.CHECK_OK, 'old_date_use':'no'}
     ErrorBit = 'NO'
+    self.logger = logging.getLogger('ccp.UrlCheckView()')
+
 
     #MARKET CHECK
-    qs = TBCP_MARKET_META_INFO.objects.all()
-    qs = qs.filter(MARKET_INFO = v_market)
-    if qs.exists():
-            # print('market : qs.exists : v_market')
-            pass
+    qs = TBCP_MEMBER_LIST_STAT_INFO.objects.get(MARKET_INFO = v_market)
+    # qs = TBCP_MARKET_META_INFO.objects.all()
+    # qs = qs.filter(MARKET_INFO = v_market)
+    # if qs.exists():
+    if qs:
+        logger.info('# MARKET_INFO[%s] O.K !!' %qs.MARKET_INFO)
+        pass
+             # print('market : qs.exists : v_market')
     else:
         ErrorBit = 'YES'
         return {'error':constant.CHECK_MARKET}
