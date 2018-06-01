@@ -1,0 +1,484 @@
+2018-05-24 11:09:57,754 - myapp - DEBUG - debug
+2018-05-24 11:09:57,754 - myapp - INFO - info
+2018-05-24 11:09:57,755 - myapp - WARNING - warn
+2018-05-24 11:09:57,755 - myapp - ERROR - error
+2018-05-24 11:09:57,755 - myapp - CRITICAL - critical
+2018-05-24 11:18:03,766 - ccp - DEBUG - debug
+2018-05-24 11:18:03,767 - ccp - INFO - info
+2018-05-24 11:18:03,767 - ccp - WARNING - warn
+2018-05-24 11:18:03,767 - ccp - ERROR - error
+2018-05-24 11:18:03,767 - ccp - CRITICAL - critical
+2018-05-24 11:21:02,220 - ccp - DEBUG - debug
+2018-05-24 11:21:02,221 - ccp - INFO - info
+2018-05-24 11:21:02,221 - ccp - WARNING - warn
+2018-05-24 11:21:02,221 - ccp - ERROR - error
+2018-05-24 11:21:02,222 - ccp - CRITICAL - critical
+2018-05-24 11:22:44,964 - ccp - DEBUG - debug
+2018-05-24 11:22:44,964 - ccp - INFO - info
+2018-05-24 11:22:44,964 - ccp - WARNING - warn
+2018-05-24 11:22:44,964 - ccp - ERROR - error
+2018-05-24 11:22:44,964 - ccp - CRITICAL - critical
+2018-05-24 11:23:30,043 - ccp - DEBUG - debug
+2018-05-24 11:23:30,043 - ccp - INFO - info
+2018-05-24 11:23:30,043 - ccp - WARNING - warn
+2018-05-24 11:23:30,044 - ccp - ERROR - error
+2018-05-24 11:23:30,044 - ccp - CRITICAL - critical
+2018-05-24 11:23:36,004 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled
+2018-05-24 11:25:23,679 - ccp/views.py - DEBUG - debug
+2018-05-24 11:25:23,680 - ccp/views.py - INFO - info
+2018-05-24 11:25:23,680 - ccp/views.py - WARNING - warn
+2018-05-24 11:25:23,680 - ccp/views.py - ERROR - error
+2018-05-24 11:25:23,682 - ccp/views.py - CRITICAL - critical
+2018-05-24 11:26:26,508 - ccp/views.py - DEBUG - debug 45
+2018-05-24 11:26:26,508 - ccp/views.py - INFO - info 46
+2018-05-24 11:26:26,508 - ccp/views.py - WARNING - warn 47
+2018-05-24 11:26:26,508 - ccp/views.py - ERROR - error 48
+2018-05-24 11:26:26,509 - ccp/views.py - CRITICAL - critical 49
+2018-05-24 11:27:30,192 - ccp/views.py - DEBUG [45] debug 
+2018-05-24 11:27:30,192 - ccp/views.py - INFO [46] info 
+2018-05-24 11:27:30,192 - ccp/views.py - WARNING [47] warn 
+2018-05-24 11:27:30,192 - ccp/views.py - ERROR [48] error 
+2018-05-24 11:27:30,194 - ccp/views.py - CRITICAL [49] critical 
+2018-05-24 11:28:37,893 - ccp/views.py - DEBUG -<module>[45] debug 
+2018-05-24 11:28:37,893 - ccp/views.py - INFO -<module>[46] info 
+2018-05-24 11:28:37,893 - ccp/views.py - WARNING -<module>[47] warn 
+2018-05-24 11:28:37,893 - ccp/views.py - ERROR -<module>[48] error 
+2018-05-24 11:28:37,893 - ccp/views.py - CRITICAL -<module>[49] critical 
+2018-05-24 11:29:16,372 - ccp/views.py - DEBUG -views[45] debug 
+2018-05-24 11:29:16,372 - ccp/views.py - INFO -views[46] info 
+2018-05-24 11:29:16,372 - ccp/views.py - WARNING -views[47] warn 
+2018-05-24 11:29:16,372 - ccp/views.py - ERROR -views[48] error 
+2018-05-24 11:29:16,374 - ccp/views.py - CRITICAL -views[49] critical 
+2018-05-24 11:29:59,504 - %(module)s - DEBUG -views[45] debug 
+2018-05-24 11:29:59,504 - %(module)s - INFO -views[46] info 
+2018-05-24 11:29:59,504 - %(module)s - WARNING -views[47] warn 
+2018-05-24 11:29:59,504 - %(module)s - ERROR -views[48] error 
+2018-05-24 11:29:59,505 - %(module)s - CRITICAL -views[49] critical 
+2018-05-24 11:31:27,881 - ccp/views.py - DEBUG - views[45] : debug 
+2018-05-24 11:31:27,881 - ccp/views.py - INFO - views[46] : info 
+2018-05-24 11:31:27,881 - ccp/views.py - WARNING - views[47] : warn 
+2018-05-24 11:31:27,881 - ccp/views.py - ERROR - views[48] : error 
+2018-05-24 11:31:27,882 - ccp/views.py - CRITICAL - views[49] : critical 
+2018-05-24 11:32:38,640 - ccp - DEBUG - views.py[45] : debug 
+2018-05-24 11:32:38,640 - ccp - INFO - views.py[46] : info 
+2018-05-24 11:32:38,640 - ccp - WARNING - views.py[47] : warn 
+2018-05-24 11:32:38,640 - ccp - ERROR - views.py[48] : error 
+2018-05-24 11:32:38,641 - ccp - CRITICAL - views.py[49] : critical 
+2018-05-24 11:34:46,454 - ccp - DEBUG - views.py[45] : debug 
+2018-05-24 11:34:46,454 - ccp - INFO - views.py[46] : info 
+2018-05-24 11:34:46,454 - ccp - WARNING - views.py[47] : warn 
+2018-05-24 11:34:46,454 - ccp - ERROR - views.py[48] : error 
+2018-05-24 11:34:46,454 - ccp - CRITICAL - views.py[49] : critical 
+2018-05-24 11:41:36,005 - ccp - DEBUG - views.py[45] : debug 
+2018-05-24 11:41:36,005 - ccp - INFO - views.py[46] : info 
+2018-05-24 11:41:36,005 - ccp - WARNING - views.py[47] : warn 
+2018-05-24 11:41:36,005 - ccp - ERROR - views.py[48] : error 
+2018-05-24 11:41:36,005 - ccp - CRITICAL - views.py[49] : critical 
+2018-05-24 11:42:27,196 - ccp - DEBUG - views.py[49] : debug 
+2018-05-24 11:42:27,196 - ccp - INFO - views.py[50] : info 
+2018-05-24 11:42:27,196 - ccp - WARNING - views.py[51] : warn 
+2018-05-24 11:42:27,196 - ccp - ERROR - views.py[52] : error 
+2018-05-24 11:42:27,196 - ccp - CRITICAL - views.py[53] : critical 
+2018-05-24 11:44:25,401 - ccp - DEBUG - views.py[50] : debug 
+2018-05-24 11:44:25,402 - ccp - INFO - views.py[51] : info 
+2018-05-24 11:44:25,402 - ccp - WARNING - views.py[52] : warn 
+2018-05-24 11:44:25,402 - ccp - ERROR - views.py[53] : error 
+2018-05-24 11:44:25,402 - ccp - CRITICAL - views.py[54] : critical 
+2018-05-28 07:13:44,735 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[61] : TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 07:14:19,190 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[61] : TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 07:14:19,196 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[91] : # No old_date_bit [{'error': 'CHECK_DATE'}] 
+2018-05-28 07:14:19,197 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[96] : # ERROR_PATH [{'error': 'CHECK_DATE'}] 
+2018-05-28 16:17:24,638 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[61] : TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 16:17:24,644 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[91] : # No old_date_bit [{'error': 'CHECK_DATE'}] 
+2018-05-28 16:17:24,644 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[96] : # ERROR_PATH [{'error': 'CHECK_DATE'}] 
+2018-05-28 16:18:32,761 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[61] : TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 16:18:32,764 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[91] : # No old_date_bit [{'error': 'CHECK_DATE'}] 
+2018-05-28 16:18:32,764 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[96] : # ERROR_PATH [{'error': 'CHECK_DATE'}] 
+2018-05-28 16:18:44,553 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[61] : TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 16:18:44,556 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[87] : # old_date_bit exist 
+2018-05-28 17:16:38,530 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[61] : TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 17:16:38,536 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[91] : # No old_date_bit [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:16:38,536 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[96] : # ERROR_PATH [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:24:47,591 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[61] : TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 17:24:59,626 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[61] : TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 17:27:16,017 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[61] : TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 17:27:16,021 - ccp - INFO - views.py[175] : # Check the input Data , Not found in TBCP_MEMBER_INFOr 
+2018-05-28 17:27:16,021 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[91] : # No old_date_bit [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:27:16,021 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[96] : # ERROR_PATH [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:28:09,143 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[61] : TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 17:28:09,148 - ccp - ERROR - views.py[175] : # Check the input Data , Not found in TBCP_MEMBER_INFOr 
+2018-05-28 17:28:09,150 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[91] : # No old_date_bit [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:28:09,150 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[96] : # ERROR_PATH [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:28:33,256 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[61] : TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 17:28:33,260 - ccp - ERROR - views.py[175] : # Check the input Data , Not found in TBCP_MEMBER_INFO[ccp] 
+2018-05-28 17:28:33,260 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[91] : # No old_date_bit [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:28:33,260 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[96] : # ERROR_PATH [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:29:20,767 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[61] : TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 17:29:20,772 - ccp - INFO - views.py[174] : # Input v_market [ccp] v_product [ndf] v_member [00002] 
+2018-05-28 17:29:20,772 - ccp - ERROR - views.py[175] : # Check the input Data , Not found in TBCP_MEMBER_INFO 
+2018-05-28 17:29:20,772 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[91] : # No old_date_bit [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:29:20,772 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[96] : # ERROR_PATH [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:30:12,101 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[61] : TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 17:30:12,106 - ccp - INFO - views.py[174] : # Input v_market:[ccp] v_product:[ndf] v_member:[00002] 
+2018-05-28 17:30:12,106 - ccp - ERROR - views.py[175] : # Check the input Data , Not found in TBCP_MEMBER_INFO 
+2018-05-28 17:30:12,106 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[91] : # No old_date_bit [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:30:12,106 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[96] : # ERROR_PATH [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:33:14,585 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[61] : TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 17:33:14,589 - ccp - INFO - views.py[174] : # Input v_market:[ccp] v_product:[ndf] v_member:[00002] 
+2018-05-28 17:33:14,589 - ccp - ERROR - views.py[175] : # This Member[00002] does not has [ccp] or [ndf], Check the input Market, Product, Member 
+2018-05-28 17:33:14,590 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[91] : # No old_date_bit [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:33:14,590 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[96] : # ERROR_PATH [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:34:24,843 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[61] : TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 17:34:24,847 - ccp - ERROR - views.py[174] : # Input v_market:[ccp] v_product:[ndf] v_member:[00002] 
+2018-05-28 17:34:24,847 - ccp - ERROR - views.py[175] : # This Member[00002] does not have [ccp] or [ndf], Check the input Market, Product, Member in TBCP_MEMBER_INFO~ !! 
+2018-05-28 17:34:24,847 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[91] : # No old_date_bit [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:34:24,847 - ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet - INFO - views.py[96] : # ERROR_PATH [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:42:31,593-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-28 17:42:31,598-ccp-ERROR-views.py[174]:# Input v_market:[ccp] v_product:[ndf] v_member:[00002] 
+2018-05-28 17:42:31,598-ccp-ERROR-views.py[175]:# This Member[00002] does not have [ccp] or [ndf], Check the input Market, Product, Member in TBCP_MEMBER_INFO~ !! 
+2018-05-28 17:42:31,598-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[91]:# No old_date_bit [{'error': 'CHECK_MEMBER'}] 
+2018-05-28 17:42:31,599-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[96]:# ERROR_PATH [{'error': 'CHECK_MEMBER'}] 
+2018-05-29 10:44:32,958-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 10:46:31,922-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 10:50:45,505-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 10:52:55,000-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 10:52:55,005-ccp-ERROR-views.py[175]:# Input v_market:[ccp] v_product:[ndf] v_member:[00002] 
+2018-05-29 10:52:55,006-ccp-ERROR-views.py[176]:# This Member[00002] does not have [ccp] or [ndf], Check the input Market, Product, Member in TBCP_MEMBER_INFO~ !! 
+2018-05-29 10:52:55,007-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[92]:# No old_date_bit [{'error': 'CHECK_MEMBER'}] 
+2018-05-29 10:52:55,007-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[97]:# ERROR_PATH [{'error': 'CHECK_MEMBER'}] 
+2018-05-29 11:14:30,486-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 11:14:30,493-ccp-INFO-views.py[172]:# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 11:14:30,495-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[88]:# old_date_bit exist 
+2018-05-29 11:23:26,084-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 11:23:26,091-ccp-INFO-views.py[177]:# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 11:23:26,093-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[88]:# old_date_bit exist 
+2018-05-29 11:25:17,467-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 11:25:17,471-ccp-INFO-views.py[177]:# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 11:25:17,473-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[88]:# old_date_bit exist 
+2018-05-29 11:29:48,993-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 11:29:48,998-ccp-INFO-views.py[183]:# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 11:29:49,000-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[88]:# old_date_bit exist 
+2018-05-29 11:30:53,950-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 11:30:53,955-ccp-INFO-views.py[183]:# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 11:30:53,957-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[88]:# old_date_bit exist 
+2018-05-29 11:32:48,038-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 11:32:48,042-ccp-INFO-views.py[183]:# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 11:32:48,043-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[88]:# old_date_bit exist 
+2018-05-29 11:33:17,642-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 11:33:17,647-ccp-INFO-views.py[183]:# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 11:33:17,649-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[88]:# old_date_bit exist 
+2018-05-29 11:33:40,914-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 11:33:40,919-ccp-INFO-views.py[183]:# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 11:33:40,922-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[88]:# old_date_bit exist 
+2018-05-29 11:33:40,924-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[115]:# DB - MARKET_INFO : ccp 
+2018-05-29 11:33:40,924-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[116]:# Input - v_market  : ccp 
+2018-05-29 11:33:40,924-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[117]:# Input - v_product : won-irs 
+2018-05-29 11:33:40,924-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[118]:# Input - v_member  : 00002 
+2018-05-29 15:27:50,081-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 15:27:50,085-ccp-INFO-views.py[184]:# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 15:27:50,087-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[88]:# old_date_bit exist 
+2018-05-29 15:27:50,088-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[116]:# DB - MARKET_INFO : ccp 
+2018-05-29 15:27:50,088-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[117]:# Input - v_market  : ccp 
+2018-05-29 15:27:50,089-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[118]:# Input - v_product : won-irs 
+2018-05-29 15:27:50,089-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[119]:# Input - v_member  : 00002 
+2018-05-29 15:31:28,758-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 15:31:28,763-ccp-INFO-views.py[186]:# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 15:31:28,765-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[88]:# old_date_bit exist 
+2018-05-29 15:31:28,767-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[116]:# DB-MARKET_INFO[ccp] 
+2018-05-29 15:31:28,767-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[117]:# DB-PRODUCT_INFO[won-irs] 
+2018-05-29 15:31:28,767-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[118]:# DB-MEMBER_INFO[00002] 
+2018-05-29 15:31:28,767-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[119]:# Input v_market[ccp] 
+2018-05-29 15:31:28,768-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[120]:# Input v_product[won-irs] 
+2018-05-29 15:31:28,768-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[121]:# Input v_member[00002] 
+2018-05-29 15:37:51,325-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[61]:TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 15:37:51,331-ccp-INFO-views.py[191]:# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 15:37:51,333-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[88]:# old_date_bit exist 
+2018-05-29 15:37:51,334-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[116]:# Query exist O.K !! 
+2018-05-29 15:37:51,334-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[117]:# Input v_market[ccp] 
+2018-05-29 15:37:51,334-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[118]:# Input v_product[won-irs] 
+2018-05-29 15:37:51,334-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[119]:# Input v_member[00002] 
+2018-05-29 15:37:51,334-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[120]:# DB MARKET_INFO[ccp] 
+2018-05-29 15:37:51,334-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[121]:# DB PRODUCT_INFO[won-irs] 
+2018-05-29 15:37:51,334-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[122]:# DB MEMBER_INFO[00002] 
+2018-05-29 15:37:51,335-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[134]:#---------Result------------ 
+2018-05-29 15:37:51,335-ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet-INFO-views.py[137]:# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-05-29 15:47:13,191 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO 	 views.py[61] TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 15:47:13,197 ccp INFO 	 views.py[190] # Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 15:47:13,198 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO 	 views.py[88] # old_date_bit exist 
+2018-05-29 15:47:13,200 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO 	 views.py[115] # Query exist O.K !! 
+2018-05-29 15:47:13,200 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO 	 views.py[116] # Input v_market[ccp] 
+2018-05-29 15:47:13,200 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO 	 views.py[117] # Input v_product[won-irs] 
+2018-05-29 15:47:13,200 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO 	 views.py[118] # Input v_member[00002] 
+2018-05-29 15:47:13,200 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO 	 views.py[119] # DB MARKET_INFO[ccp] 
+2018-05-29 15:47:13,201 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO 	 views.py[120] # DB PRODUCT_INFO[won-irs] 
+2018-05-29 15:47:13,201 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO 	 views.py[121] # DB MEMBER_INFO[00002] 
+2018-05-29 15:47:13,201 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO 	 views.py[134] #---------Result------------ 
+2018-05-29 15:47:13,201 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO 	 views.py[136] # Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-05-29 15:49:48,356 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[61] TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 15:49:48,362 ccp INFO	views.py[190] # Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 15:49:48,364 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[88] # old_date_bit exist 
+2018-05-29 15:49:48,366 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[115] # Query exist O.K !! 
+2018-05-29 15:49:48,366 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[116] # Input v_market[ccp] 
+2018-05-29 15:49:48,366 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[117] # Input v_product[won-irs] 
+2018-05-29 15:49:48,366 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[118] # Input v_member[00002] 
+2018-05-29 15:49:48,366 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[119] # DB MARKET_INFO[ccp] 
+2018-05-29 15:49:48,366 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[120] # DB PRODUCT_INFO[won-irs] 
+2018-05-29 15:49:48,366 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[121] # DB MEMBER_INFO[00002] 
+2018-05-29 15:49:48,367 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[134] #---------Result------------ 
+2018-05-29 15:49:48,367 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[136] # Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-05-29 15:50:09,580 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[61]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 15:50:09,584 ccp INFO	views.py[190]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 15:50:09,586 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[88]	# old_date_bit exist 
+2018-05-29 15:50:09,588 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[115]	# Query exist O.K !! 
+2018-05-29 15:50:09,588 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[116]	# Input v_market[ccp] 
+2018-05-29 15:50:09,588 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[117]	# Input v_product[won-irs] 
+2018-05-29 15:50:09,588 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[118]	# Input v_member[00002] 
+2018-05-29 15:50:09,588 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[119]	# DB MARKET_INFO[ccp] 
+2018-05-29 15:50:09,588 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[120]	# DB PRODUCT_INFO[won-irs] 
+2018-05-29 15:50:09,588 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[121]	# DB MEMBER_INFO[00002] 
+2018-05-29 15:50:09,588 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[134]	#---------Result------------ 
+2018-05-29 15:50:09,588 ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet INFO	views.py[136]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-05-29 15:53:11,142	(levelname)s	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 15:53:11,147	(levelname)s	ccp	views.py[191]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 15:53:11,148	(levelname)s	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[89]	# old_date_bit exist 
+2018-05-29 15:53:11,150	(levelname)s	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[116]	# Query exist O.K !! 
+2018-05-29 15:53:11,150	(levelname)s	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[117]	# Input v_market[ccp] 
+2018-05-29 15:53:11,150	(levelname)s	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[118]	# Input v_product[won-irs] 
+2018-05-29 15:53:11,150	(levelname)s	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[119]	# Input v_member[00002] 
+2018-05-29 15:53:11,150	(levelname)s	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[120]	# DB MARKET_INFO[ccp] 
+2018-05-29 15:53:11,150	(levelname)s	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[121]	# DB PRODUCT_INFO[won-irs] 
+2018-05-29 15:53:11,150	(levelname)s	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[122]	# DB MEMBER_INFO[00002] 
+2018-05-29 15:53:11,151	(levelname)s	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	#---------Result------------ 
+2018-05-29 15:53:11,151	(levelname)s	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[137]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-05-29 15:53:29,711	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 15:53:29,716	INFO	ccp	views.py[191]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 15:53:29,717	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[89]	# old_date_bit exist 
+2018-05-29 15:53:29,719	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[116]	# Query exist O.K !! 
+2018-05-29 15:53:29,719	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[117]	# Input v_market[ccp] 
+2018-05-29 15:53:29,719	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[118]	# Input v_product[won-irs] 
+2018-05-29 15:53:29,719	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[119]	# Input v_member[00002] 
+2018-05-29 15:53:29,719	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[120]	# DB MARKET_INFO[ccp] 
+2018-05-29 15:53:29,720	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[121]	# DB PRODUCT_INFO[won-irs] 
+2018-05-29 15:53:29,720	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[122]	# DB MEMBER_INFO[00002] 
+2018-05-29 15:53:29,720	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	#---------Result------------ 
+2018-05-29 15:53:29,720	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[137]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-05-29 15:54:00,160	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 15:54:00,164	[INFO]	ccp	views.py[191]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 15:54:00,166	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[89]	# old_date_bit exist 
+2018-05-29 15:54:00,167	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[116]	# Query exist O.K !! 
+2018-05-29 15:54:00,168	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[117]	# Input v_market[ccp] 
+2018-05-29 15:54:00,168	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[118]	# Input v_product[won-irs] 
+2018-05-29 15:54:00,168	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[119]	# Input v_member[00002] 
+2018-05-29 15:54:00,168	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[120]	# DB MARKET_INFO[ccp] 
+2018-05-29 15:54:00,168	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[121]	# DB PRODUCT_INFO[won-irs] 
+2018-05-29 15:54:00,168	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[122]	# DB MEMBER_INFO[00002] 
+2018-05-29 15:54:00,168	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	#---------Result------------ 
+2018-05-29 15:54:00,168	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[137]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-05-29 16:03:58,562	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 16:03:58,568	[INFO]	ccp	views.py[191]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 16:03:58,569	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[89]	# old_date_bit exist 
+2018-05-29 16:03:58,571	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[116]	# Query exist O.K !! 
+2018-05-29 16:03:58,571	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[117]	# Input v_market[ccp] 
+2018-05-29 16:03:58,571	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[118]	# Input v_product[won-irs] 
+2018-05-29 16:03:58,571	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[119]	# Input v_member[00002] 
+2018-05-29 16:03:58,571	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[120]	# DB MARKET_INFO[ccp] 
+2018-05-29 16:03:58,571	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[121]	# DB PRODUCT_INFO[won-irs] 
+2018-05-29 16:03:58,571	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[122]	# DB MEMBER_INFO[00002] 
+2018-05-29 16:03:58,571	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	#---------Result------------ 
+2018-05-29 16:03:58,572	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[137]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-05-29 16:04:22,029	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 16:04:22,031	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[93]	# No old_date_bit [{'error': 'CHECK_PRODUCT'}] 
+2018-05-29 16:04:22,031	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[98]	# ERROR_PATH [{'error': 'CHECK_PRODUCT'}] 
+2018-05-29 16:04:29,418	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 16:04:29,422	[ERROR]	ccp	views.py[194]	# Input v_market:[ccp] v_product:[ndf] v_member:[00002] 
+2018-05-29 16:04:29,422	[ERROR]	ccp	views.py[195]	# This Member[00002] does not have [ccp] or [ndf], Check the input Market, Product, Member in TBCP_MEMBER_INFO~ !! 
+2018-05-29 16:04:29,423	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[93]	# No old_date_bit [{'error': 'CHECK_MEMBER'}] 
+2018-05-29 16:04:29,423	[INFO]	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[98]	# ERROR_PATH [{'error': 'CHECK_MEMBER'}] 
+2018-05-29 16:05:46,703	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 16:05:46,707	ERROR	ccp	views.py[194]	# Input v_market:[ccp] v_product:[ndf] v_member:[00002] 
+2018-05-29 16:05:46,708	ERROR	ccp	views.py[195]	# This Member[00002] does not have [ccp] or [ndf], Check the input Market, Product, Member in TBCP_MEMBER_INFO~ !! 
+2018-05-29 16:05:46,708	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[93]	# No old_date_bit [{'error': 'CHECK_MEMBER'}] 
+2018-05-29 16:05:46,708	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[98]	# ERROR_PATH [{'error': 'CHECK_MEMBER'}] 
+2018-05-29 16:07:33,870	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 16:07:33,874	ERROR	ccp	views.py[194]	# Input v_market:[ccp] v_product:[ndf] v_member:[00002] 
+2018-05-29 16:07:33,875	ERROR	ccp	views.py[195]	# This Member[00002] does not have [ccp] or [ndf], Check the input Market, Product, Member in TBCP_MEMBER_INFO~ !! 
+2018-05-29 16:07:33,875	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[93]	# No old_date_bit [{'error': 'CHECK_MEMBER'}] 
+2018-05-29 16:07:33,875	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[98]	# ERROR_PATH [{'error': 'CHECK_MEMBER'}] 
+2018-05-29 16:12:43,510	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 16:12:43,516	INFO	ccp	views.py[188]	# Input v_market:[ccp] v_product:[usd-irs] v_member:/[00002] 
+2018-05-29 16:15:06,045	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 16:15:06,050	INFO	ccp	views.py[188]	# Input v_market:[ccp] v_product:[usd-irs] v_member:/[00002] 
+2018-05-29 16:15:06,052	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[88]	# old_date_bit[no] Exist 
+2018-05-29 16:15:06,056	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[113]	# Query exist O.K !! 
+2018-05-29 16:15:06,056	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[114]	# Input v_market[ccp] 
+2018-05-29 16:15:06,057	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[115]	# Input v_product[usd-irs] 
+2018-05-29 16:15:06,057	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[116]	# Input v_member[00002] 
+2018-05-29 16:15:06,057	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[117]	# DB MARKET_INFO[ccp] 
+2018-05-29 16:15:06,057	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[118]	# DB PRODUCT_INFO[usd-irs] 
+2018-05-29 16:15:06,058	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[119]	# DB MEMBER_INFO[00002] 
+2018-05-29 16:15:06,058	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	#---------Result------------ 
+2018-05-29 16:15:06,058	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# Finds Query Data [['api-list', 'ccp', 'usd-irs', '00002', '20180528', 'all']] 
+2018-05-29 17:25:30,150	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 17:25:30,152	INFO	ccp	views.py[83]	BusinessDate[20180529] 
+2018-05-29 17:25:30,158	INFO	ccp	views.py[201]	# Input v_market:[ccp] v_product:[usd-irs] v_member:/[00002] 
+2018-05-29 17:25:30,159	INFO	ccp	views.py[215]	# BusinessDate[20180529] , InputDate[20180528] 
+2018-05-29 17:25:30,159	WARNING	ccp	views.py[229]	  
+2018-05-29 17:25:30,159	WARNING	ccp	views.py[230]	------------------------ 
+2018-05-29 17:25:30,159	WARNING	ccp	views.py[231]	#[W] Check the InputDate : Past Date has Inputed 
+2018-05-29 17:25:30,159	WARNING	ccp	views.py[232]	------------------------ 
+2018-05-29 17:25:30,160	WARNING	ccp	views.py[233]	# BusinessDate[20180529] > InputDate[20180528] 
+2018-05-29 17:26:31,572	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 17:26:31,573	INFO	ccp	views.py[83]	BusinessDate[20180529] 
+2018-05-29 17:26:31,577	INFO	ccp	views.py[201]	# Input v_market:[ccp] v_product:[usd-irs] v_member:/[00002] 
+2018-05-29 17:26:31,577	INFO	ccp	views.py[215]	# BusinessDate[20180529] , InputDate[20180528] 
+2018-05-29 17:26:31,577	WARNING	ccp	views.py[229]	  
+2018-05-29 17:26:31,577	WARNING	ccp	views.py[230]	------------------------ 
+2018-05-29 17:26:31,577	WARNING	ccp	views.py[231]	#[W] Check the InputDate : Past Date has Inputed 
+2018-05-29 17:26:31,578	WARNING	ccp	views.py[232]	------------------------ 
+2018-05-29 17:26:31,578	WARNING	ccp	views.py[233]	# BusinessDate[20180529] > InputDate[20180528] 
+2018-05-29 17:26:52,013	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 17:26:52,013	INFO	ccp	views.py[83]	BusinessDate[20180529] 
+2018-05-29 17:26:52,017	INFO	ccp	views.py[201]	# Input v_market:[ccp] v_product:[usd-irs] v_member:/[00002] 
+2018-05-29 17:26:52,017	INFO	ccp	views.py[215]	# BusinessDate[20180529] , InputDate[20180528] 
+2018-05-29 17:26:52,018	WARNING	ccp	views.py[229]	  
+2018-05-29 17:26:52,018	WARNING	ccp	views.py[230]	------------------------ 
+2018-05-29 17:26:52,018	WARNING	ccp	views.py[231]	#[W] Check the InputDate : Past Date has Inputed 
+2018-05-29 17:26:52,018	WARNING	ccp	views.py[232]	------------------------ 
+2018-05-29 17:26:52,018	WARNING	ccp	views.py[233]	# BusinessDate[20180529] > InputDate[20180528] 
+2018-05-29 17:26:52,020	ERROR	ccp	views.py[242]	Check the Input Date[20180528], old_date_use[no] 
+2018-05-29 17:26:52,022	ERROR	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[92]	# ERROR_PATH [CHECK_DATE] 
+2018-05-29 17:28:23,247	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 17:28:23,248	INFO	ccp	views.py[83]	BusinessDate[20180529] 
+2018-05-29 17:28:23,251	INFO	ccp	views.py[201]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 17:28:23,252	INFO	ccp	views.py[215]	# BusinessDate[20180529] , InputDate[20180528] 
+2018-05-29 17:28:23,252	WARNING	ccp	views.py[229]	  
+2018-05-29 17:28:23,252	WARNING	ccp	views.py[230]	------------------------ 
+2018-05-29 17:28:23,252	WARNING	ccp	views.py[231]	#[W] Check the InputDate : Past Date has Inputed 
+2018-05-29 17:28:23,252	WARNING	ccp	views.py[232]	------------------------ 
+2018-05-29 17:28:23,252	WARNING	ccp	views.py[233]	# BusinessDate[20180529] > InputDate[20180528] 
+2018-05-29 17:28:23,254	WARNING	ccp	views.py[105]	# Past data requested !! 
+2018-05-29 17:28:23,254	WARNING	ccp	views.py[106]	# BusinessDate[20180529], InputDate[20180528], old_date_bit[yes] 
+2018-05-29 17:28:23,255	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[126]	# Query exist O.K !! 
+2018-05-29 17:28:23,255	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[127]	# Input v_market[ccp] 
+2018-05-29 17:28:23,256	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[128]	# Input v_product[won-irs] 
+2018-05-29 17:28:23,256	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[129]	# Input v_member[00002] 
+2018-05-29 17:28:23,256	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[130]	# DB MARKET_INFO[ccp] 
+2018-05-29 17:28:23,256	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# DB PRODUCT_INFO[won-irs] 
+2018-05-29 17:28:23,256	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# DB MEMBER_INFO[00002] 
+2018-05-29 17:28:23,256	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[145]	#---------Result------------ 
+2018-05-29 17:28:23,256	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[147]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-05-29 17:29:46,858	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-05-29 17:29:46,859	INFO	ccp	views.py[83]	BusinessDate[20180529] 
+2018-05-29 17:29:46,862	INFO	ccp	views.py[201]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-05-29 17:29:46,862	INFO	ccp	views.py[215]	# BusinessDate[20180529] , InputDate[20180528] 
+2018-05-29 17:29:46,862	WARNING	ccp	views.py[229]	  
+2018-05-29 17:29:46,863	WARNING	ccp	views.py[230]	------------------------ 
+2018-05-29 17:29:46,863	WARNING	ccp	views.py[231]	#[W] Check the InputDate : Past Date has Inputed 
+2018-05-29 17:29:46,863	WARNING	ccp	views.py[232]	------------------------ 
+2018-05-29 17:29:46,863	WARNING	ccp	views.py[233]	# BusinessDate[20180529] > InputDate[20180528] 
+2018-05-29 17:29:46,864	WARNING	ccp	views.py[105]	# Past data requested !! 
+2018-05-29 17:29:46,864	WARNING	ccp	views.py[106]	# BusinessDate[20180529], InputDate[20180528], old_date_bit[yes] 
+2018-05-29 17:29:46,865	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[126]	# Query exist O.K !! 
+2018-05-29 17:29:46,865	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[127]	# Input v_market[ccp] 
+2018-05-29 17:29:46,866	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[128]	# Input v_product[won-irs] 
+2018-05-29 17:29:46,866	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[129]	# Input v_member[00002] 
+2018-05-29 17:29:46,866	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[130]	# DB MARKET_INFO[ccp] 
+2018-05-29 17:29:46,866	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# DB PRODUCT_INFO[won-irs] 
+2018-05-29 17:29:46,866	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# DB MEMBER_INFO[00002] 
+2018-05-29 17:29:46,866	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[145]	#---------Result------------ 
+2018-05-29 17:29:46,866	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[147]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-06-01 09:38:33,080	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[62]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-01 09:38:33,092	INFO	ccp	views.py[83]	BusinessDate[20180601] 
+2018-06-01 09:38:33,124	INFO	ccp	views.py[201]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-01 09:38:33,124	INFO	ccp	views.py[215]	# BusinessDate[20180601] , InputDate[20180528] 
+2018-06-01 09:38:33,124	WARNING	ccp	views.py[229]	  
+2018-06-01 09:38:33,124	WARNING	ccp	views.py[230]	------------------------ 
+2018-06-01 09:38:33,124	WARNING	ccp	views.py[231]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-01 09:38:33,124	WARNING	ccp	views.py[232]	------------------------ 
+2018-06-01 09:38:33,124	WARNING	ccp	views.py[233]	# BusinessDate[20180601] > InputDate[20180528] 
+2018-06-01 09:38:33,126	WARNING	ccp	views.py[105]	# Past data requested !! 
+2018-06-01 09:38:33,126	WARNING	ccp	views.py[106]	# BusinessDate[20180601], InputDate[20180528], old_date_bit[yes] 
+2018-06-01 09:38:33,128	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[126]	# Query exist O.K !! 
+2018-06-01 09:38:33,128	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[127]	# Input v_market[ccp] 
+2018-06-01 09:38:33,128	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[128]	# Input v_product[won-irs] 
+2018-06-01 09:38:33,128	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[129]	# Input v_member[00002] 
+2018-06-01 09:38:33,128	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[130]	# DB MARKET_INFO[ccp] 
+2018-06-01 09:38:33,128	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# DB PRODUCT_INFO[won-irs] 
+2018-06-01 09:38:33,129	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# DB MEMBER_INFO[00002] 
+2018-06-01 09:38:33,129	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[145]	#---------Result------------ 
+2018-06-01 09:38:33,129	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[147]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-06-01 10:31:38,197	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-01 10:31:38,199	INFO	ccp	views.py[84]	BusinessDate[20180601] 
+2018-06-01 10:31:38,207	INFO	ccp	views.py[210]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-01 10:31:38,207	INFO	ccp	views.py[224]	# BusinessDate[20180601] , InputDate[20180528] 
+2018-06-01 10:31:38,207	WARNING	ccp	views.py[238]	  
+2018-06-01 10:31:38,207	WARNING	ccp	views.py[239]	------------------------ 
+2018-06-01 10:31:38,207	WARNING	ccp	views.py[240]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-01 10:31:38,208	WARNING	ccp	views.py[241]	------------------------ 
+2018-06-01 10:31:38,208	WARNING	ccp	views.py[242]	# BusinessDate[20180601] > InputDate[20180528] 
+2018-06-01 10:31:38,209	WARNING	ccp	views.py[106]	# Past data requested !! 
+2018-06-01 10:31:38,209	WARNING	ccp	views.py[107]	# BusinessDate[20180601], InputDate[20180528], old_date_bit[yes] 
+2018-06-01 10:34:59,696	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-01 10:34:59,696	INFO	ccp	views.py[84]	BusinessDate[20180601] 
+2018-06-01 10:34:59,704	INFO	ccp	views.py[213]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-01 10:34:59,704	INFO	ccp	views.py[227]	# BusinessDate[20180601] , InputDate[20180528] 
+2018-06-01 10:34:59,704	WARNING	ccp	views.py[241]	  
+2018-06-01 10:34:59,705	WARNING	ccp	views.py[242]	------------------------ 
+2018-06-01 10:34:59,705	WARNING	ccp	views.py[243]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-01 10:34:59,705	WARNING	ccp	views.py[244]	------------------------ 
+2018-06-01 10:34:59,705	WARNING	ccp	views.py[245]	# BusinessDate[20180601] > InputDate[20180528] 
+2018-06-01 10:34:59,707	WARNING	ccp	views.py[106]	# Past data requested !! 
+2018-06-01 10:34:59,707	WARNING	ccp	views.py[107]	# BusinessDate[20180601], InputDate[20180528], old_date_bit[yes] 
+2018-06-01 10:34:59,708	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# Query exist O.K !! 
+2018-06-01 10:34:59,708	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# Input v_market[ccp] 
+2018-06-01 10:34:59,709	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[133]	# Input v_product[won-irs] 
+2018-06-01 10:34:59,709	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# Input v_member[00002] 
+2018-06-01 10:34:59,709	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	# DB MARKET_INFO[ccp] 
+2018-06-01 10:34:59,709	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[136]	# DB PRODUCT_INFO[won-irs] 
+2018-06-01 10:34:59,709	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[137]	# DB MEMBER_INFO[00002] 
+2018-06-01 10:34:59,709	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[150]	#---------Result------------ 
+2018-06-01 10:34:59,709	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[159]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-06-01 10:39:09,887	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-01 10:39:09,888	INFO	ccp	views.py[84]	BusinessDate[20180601] 
+2018-06-01 10:39:09,896	INFO	ccp	views.py[212]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-01 10:39:09,896	INFO	ccp	views.py[226]	# BusinessDate[20180601] , InputDate[20180528] 
+2018-06-01 10:39:09,896	WARNING	ccp	views.py[240]	  
+2018-06-01 10:39:09,896	WARNING	ccp	views.py[241]	------------------------ 
+2018-06-01 10:39:09,896	WARNING	ccp	views.py[242]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-01 10:39:09,896	WARNING	ccp	views.py[243]	------------------------ 
+2018-06-01 10:39:09,897	WARNING	ccp	views.py[244]	# BusinessDate[20180601] > InputDate[20180528] 
+2018-06-01 10:39:09,898	WARNING	ccp	views.py[106]	# Past data requested !! 
+2018-06-01 10:39:09,898	WARNING	ccp	views.py[107]	# BusinessDate[20180601], InputDate[20180528], old_date_bit[yes] 
+2018-06-01 10:39:09,899	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# Query exist O.K !! 
+2018-06-01 10:39:09,900	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[133]	# Input v_market[ccp] 
+2018-06-01 10:39:09,900	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# Input v_product[won-irs] 
+2018-06-01 10:39:09,900	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	# Input v_member[00002] 
+2018-06-01 10:39:09,900	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[136]	# DB MARKET_INFO[ccp] 
+2018-06-01 10:39:09,900	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[137]	# DB PRODUCT_INFO[won-irs] 
+2018-06-01 10:39:09,900	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[138]	# DB MEMBER_INFO[00002] 
+2018-06-01 10:39:09,900	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[151]	#---------Result------------ 
+2018-06-01 10:39:09,900	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[152]	# MEMBER_ASK_CNT[0] Before 
+2018-06-01 10:39:09,900	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[154]	# MEMBER_ASK_CNT[1] After 
+2018-06-01 10:39:09,905	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[158]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-06-01 10:39:54,970	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-01 10:39:54,970	INFO	ccp	views.py[84]	BusinessDate[20180601] 
+2018-06-01 10:39:54,974	INFO	ccp	views.py[212]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-01 10:39:54,975	INFO	ccp	views.py[226]	# BusinessDate[20180601] , InputDate[20180528] 
+2018-06-01 10:39:54,975	WARNING	ccp	views.py[240]	  
+2018-06-01 10:39:54,975	WARNING	ccp	views.py[241]	------------------------ 
+2018-06-01 10:39:54,975	WARNING	ccp	views.py[242]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-01 10:39:54,975	WARNING	ccp	views.py[243]	------------------------ 
+2018-06-01 10:39:54,975	WARNING	ccp	views.py[244]	# BusinessDate[20180601] > InputDate[20180528] 
+2018-06-01 10:39:54,976	WARNING	ccp	views.py[106]	# Past data requested !! 
+2018-06-01 10:39:54,977	WARNING	ccp	views.py[107]	# BusinessDate[20180601], InputDate[20180528], old_date_bit[yes] 
+2018-06-01 10:39:54,978	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# Query exist O.K !! 
+2018-06-01 10:39:54,978	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[133]	# Input v_market[ccp] 
+2018-06-01 10:39:54,978	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# Input v_product[won-irs] 
+2018-06-01 10:39:54,978	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	# Input v_member[00002] 
+2018-06-01 10:39:54,978	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[136]	# DB MARKET_INFO[ccp] 
+2018-06-01 10:39:54,978	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[137]	# DB PRODUCT_INFO[won-irs] 
+2018-06-01 10:39:54,979	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[138]	# DB MEMBER_INFO[00002] 
+2018-06-01 10:39:54,979	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[151]	#---------Result------------ 
+2018-06-01 10:39:54,979	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[152]	# MEMBER_ASK_CNT[1] Before 
+2018-06-01 10:39:54,982	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[155]	# MEMBER_ASK_CNT[2] After 
+2018-06-01 10:39:54,982	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[158]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
