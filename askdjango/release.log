@@ -51,3 +51,7 @@ critical
 2018-05-29 16:07:33,875	ERROR	ccp	views.py[195]	# This Member[00002] does not have [ccp] or [ndf], Check the input Market, Product, Member in TBCP_MEMBER_INFO~ !! 
 2018-05-29 17:26:52,020	ERROR	ccp	views.py[242]	Check the Input Date[20180528], old_date_use[no] 
 2018-05-29 17:26:52,022	ERROR	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[92]	# ERROR_PATH [CHECK_DATE] 
+2018-06-04 15:00:17,120	ERROR	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[105]	# ERROR_PATH [tcpmih00101] 
+2018-06-04 15:04:22,866	ERROR	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[107]	# ERROR_PATH [tcpmih00101] 
+2018-06-04 15:06:28,848	ERROR	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[107]	# ERROR_PATH [all] 
+2018-06-04 15:11:41,365	ERROR	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[107]	# ERROR_PATH [all] 

@@ -69,6 +69,7 @@ class TBCP_MEMBER_LIST_STAT_INFO_ViewSet(viewsets.ModelViewSet):
 
     @list_route()
     def api_list(self, request, *args, **kwargs):
+        logger.info('# api_list() is called....')
         temp_path = self.request.path[1:] # 맨앞 '/' 제거
         temp_path = temp_path.lower() # 입력값 lower 변경 
         temp_path = temp_path.split('/')  # path 사이 '/' 모두 제거      
@@ -81,40 +82,34 @@ class TBCP_MEMBER_LIST_STAT_INFO_ViewSet(viewsets.ModelViewSet):
 
         # 당일 system 시간 조회 
         business_date = datetime.datetime.today().strftime('%Y%m%d')
-        logger.info('BusinessDate[%s]' %business_date)
+        logger.info('# SystemDate[%s]...' %business_date)
 
         # URL Check, 입력된 값이 기본 URL 메타 값이 맞는지 사전 확인 
         rtUrlCheck = {}
-        rtUrlCheck = UrlCheckView(v_market, v_product, v_member, v_date, v_item)
-        #URL COMMON MEMTA CHECK
-        #URL MEMBER'S LIST CHECK
+        #UrlCheckViewCommon() : URL 각 META값 확인
+        logger.info('# UrlCheckViewCommon() is called .....')
+        rtUrlCheck = UrlCheckViewCommon(v_market, v_product, v_member, v_date, v_item)
 
-
+        #error 처리 
         if rtUrlCheck['error'] != constant.CHECK_OK:
-            #error 처리 
-            self.logger.error('# ERROR_PATH [%s]' % rtUrlCheck['error'])
-            return HttpResponse('ERROR_PATH : ', rtUrlCheck['error'])
-        else: # O.K 
-            #과거 데이타 조회 요청 여부 확인
-            # if 'old_date_bit' in rtUrlCheck:
-            #     self.logger.info('# old_date_bit[%s] Exist' %rtUrlCheck['old_date_bit'])
-            #     old_date_bit = rtUrlCheck['old_date_bit']
-            # else:
-            #     self.logger.error('# old_date_bit[%s] No Exist' % rtUrlCheck)
-            #     pass 
-            old_date_bit = rtUrlCheck['old_date_bit']
+            self.logger.error('# UrlCheckViewCommon() ERROR_PATH [%s]' % rtUrlCheck['error'])
+            return HttpResponse('UrlCheckViewCommon() ERROR_PATH : ', rtUrlCheck['error'])
+        else: # O.K
+            self.logger.info('# UrlCheckViewCommon() Return O.K!! rtUrlCheck[%s]' % rtUrlCheck['error'])
+            pass
 
-            if old_date_bit == 'yes':
-                logger.warn('# Past data requested !!')
-                logger.warn('# BusinessDate[%s], InputDate[%s], old_date_bit[%s]' %(business_date, v_date, old_date_bit))
-                pass
-            else:
-                logger.warn('# Current data requested !!')
-                logger.warn('# BusinessDate[%s], InputDate[%s], old_date_bit[%s]' %(business_date, v_date, old_date_bit))
-                pass
+        #URLCheckViewList() : LIST 인 경우에 해당 CASE만 확인
+        self.logger.info('# Call UrlCheckViewList()....')
+        rtUrlCheck = UrlCheckViewList(v_market, v_product, v_member, v_date, v_item)
+        if rtUrlCheck['error'] != constant.CHECK_OK:
+            #error 처리
+            self.logger.error('# UrlCheckViewList ERROR_PATH [%s]' % rtUrlCheck['error'])
+            return HttpResponse('UrlCheckViewList ERROR_PATH : ', rtUrlCheck['error'])
+        else: # O.K 
+            pass
+
 
         # Query Memeber's List Data information 
-        # compare member status to input path
         try:
             qs = TBCP_MEMBER_LIST_STAT_INFO.objects.get(MARKET_INFO = v_market, PRODUCT_INFO = v_product, MEMBER_INFO = v_member)
             # qs = TBCP_MEMBER_LIST_STAT_INFO.objects.all()
@@ -192,7 +187,7 @@ class TBCP_MEMBER_LIST_DETAIL_INFO_ViewSet(viewsets.ModelViewSet):
 
         # URL Check, 입력된 값이 기본 URL 메타 값이 맞는지 사전 확인 
         rtUrlCheck = {}
-        rtUrlCheck = UrlCheckView(v_market, v_product, v_member, v_date, v_item)
+        rtUrlCheck = UrlCheckViewCommon(v_market, v_product, v_member, v_date, v_item)
         #URL COMMON MEMTA CHECK ('UrlCheckViewCommon()')
         #URL MEMBER'S DETAIL LIST CHECK ('UrlCheckViewDetail()')
 
@@ -208,47 +203,58 @@ class TBCP_MEMBER_LIST_DETAIL_INFO_ViewSet(viewsets.ModelViewSet):
 # CHECK (공통)   메타값  'URL PATH' IN TBCP_*_META_TABLE or NOT 
 # CHECK (LIST)  리스트  'URL PATH' IN TBCP_MEMBER_LIST_STAT_INFO
 # CHECK (DETAIL)데이타  'URL PATH' IN TBCP_MEMBER_LIST_DETAIL_INFO
-def UrlCheckView(v_market, v_product, v_member, v_date, v_item):
-    # return {'error':constant.CHECK_OK, 'old_date_use':'no'}
+# CHECK (POST)  데이타  'URL PATH' IN TBCP_MEMBER_DATA_INFO
+#   
+def UrlCheckViewCommon(v_market, v_product, v_member, v_date, v_item):
     ErrorBit = 'NO'
-    self.logger = logging.getLogger('ccp.UrlCheckView()')
-
+    logger.info('# def UrlCheckViewCommon() is called...')
 
     #MARKET CHECK
-    qs = TBCP_MEMBER_LIST_STAT_INFO.objects.get(MARKET_INFO = v_market)
+    qs = TBCP_MARKET_META_INFO.objects.get(MARKET_INFO = v_market)
     # qs = TBCP_MARKET_META_INFO.objects.all()
     # qs = qs.filter(MARKET_INFO = v_market)
     # if qs.exists():
     if qs:
-        logger.info('# MARKET_INFO[%s] O.K !!' %qs.MARKET_INFO)
+        logger.info('# MARKET_INFO[%s] Existing  O.K !!' % qs.MARKET_INFO)
         pass
-             # print('market : qs.exists : v_market')
     else:
         ErrorBit = 'YES'
+        logger.info('# MARKET_INFO[%s] No Existing. Error return !!' % v_market)
         return {'error':constant.CHECK_MARKET}
 
-    #PRODUCT CHECK
-    qs = TBCP_PRODUCT_META_INFO.objects.all()
-    qs = qs.filter(PRODUCT_INFO = v_product)
-    if qs.exists():
-        print('qs.exist:product')
+   #PRODUCT CHECK
+    qs = TBCP_PRODUCT_META_INFO.objects.get(PRODUCT_INFO = v_product)
+    if qs:
+        logger.info('# PRODUCT_INFO[%s] Existing  O.K !!' % qs.PRODUCT_INFO)
         pass
     else:
         ErrorBit = 'YES'
+        logger.info('# PRODUCT_INFO[%s] No Existing. Error return !!' % v_product)
         return {'error':constant.CHECK_PRODUCT}
 
     #ITEM CHECK
-    qs = TBCP_ITEM_META_INFO.objects.all()
     if v_item == 'all':
         pass
-    else: 
-        qs = qs.filter(Q(ITEM_GROUP = v_item) | Q(ITEM_CODE = v_item))
-        if qs.exists():
-            print('qs.item : ')
+    else:
+        qs = TBCP_ITEM_META_INFO.objects.get(Q(ITEM_GROUP = v_item) | Q(ITEM_CODE = v_item))
+        if qs:
+            logger.info('# ITEM_INFO[%s] Existing  O.K !!' % v_item)
             pass
         else:
             ErrorBit = 'YES'
+            logger.info('# ITEM_INFO[%s] No Existing. Error return !!' % v_item)
             return {'error':constant.CHECK_ITEM}
+
+    # if v_item == 'all':
+    #     pass
+    # else: 
+    #     qs = qs.filter(Q(ITEM_GROUP = v_item) | Q(ITEM_CODE = v_item))
+    #     if qs.exists():
+    #         print('qs.item : ')
+    #         pass
+    #     else:
+    #         ErrorBit = 'YES'
+    #         return {'error':constant.CHECK_ITEM}
 
 
 
@@ -263,14 +269,32 @@ def UrlCheckView(v_market, v_product, v_member, v_date, v_item):
         logger.error('# This Member[%s] does not have [%s] or [%s], Check the input Market, Product, Member in TBCP_MEMBER_INFO~ !!' %(v_member, v_market, v_product) )
         ErrorBit = 'YES'
         return {'error':constant.CHECK_MEMBER}
-    
+
+    if ErrorBit == 'NO':
+        logger.info('# RtUrlCheck O.K !!.....')
+        return {'error': constant.CHECK_OK}
+    else:
+        logger.critical('[C] ---------------------------')
+        logger.critical('[C] Something are wrong !!!')
+        logger.critical('[C] ErrorBit [%s]' % ErrorBit)
+        logger.critical('[C] Input Path : v_marekt[%s]' % v_market)
+        logger.critical('[C] Input Path : v_product[%s]' % v_market)
+        logger.critical('[C] Input Path : v_member[%s]' % v_market)
+        logger.critical('   ')
+
+
+# LIST check
+def UrlCheckViewList(v_market, v_product, v_member, v_date, v_item):
+    ErrorBit = 'NO'
+    logger.info('# UrlCheckViewList() starts ....')
 
     #DATE CHECK
     old_date_use = 'no' # It is permit bit to use past data 
+
     # date Check, 당일 여부 check 
     # temp_date = datetime.datetime.today().strftime('%Y-%m-%d')
     temp_date = datetime.datetime.today().strftime('%Y%m%d')
-    logger.info('# BusinessDate[%s] , InputDate[%s]' %(temp_date, v_date))
+    logger.info('# SystemDate[%s] , InputDate[%s]' %(temp_date, v_date))
 
     # 회원정보에서 과거 데이타 조회 기능(old_date_bit) 이 있으면 과거 날짜도 허용 
     delta_date = int(temp_date) - int(v_date)
@@ -290,16 +314,17 @@ def UrlCheckView(v_market, v_product, v_member, v_date, v_item):
         logger.warn('------------------------')
         logger.warn('# BusinessDate[%s] > InputDate[%s]' %(temp_date, v_date))
 
-        # 과거 데이타 조회
-        # qs = TBCP_MEMBER_INFO.objects.all()
-        qs = qs.filter(MARKET_INFO = v_market, PRODUCT_INFO = v_product, MEMBER_INFO = v_member)
+        # 과거 데이타 조회 가능 여부 확인( OLD_DATE_USE == 'yes') 
+        qs = TBCP_MEMBER_INFO.objects.get(MARKET_INFO=v_market, PRODUCT_INFO=v_product, MEMBER_INFO=v_member)
         if qs:
-            for item in qs:
-                old_date_use = item.OLD_DATE_USE
-                if old_date_use == 'no':
-                    logger.error('Check the Input Date[%s], old_date_use[%s]' %(v_date, old_date_use))
-                    ErrorBit = 'YES'
-                    return {'error':constant.CHECK_DATE} 
+            logger.info('# Query O.K !! v_market[%s] v_product[%s] v_member[%s]' %(v_marekt, v_product, v_member))
+            old_date_use = qs.OLD_DATE_USE
+            if old_date_use == 'yes':
+                pass
+            else:
+                logger.error('Check the Input Date[%s], old_date_use[%s]' % (v_date, old_date_use))
+                ErrorBit = 'YES'
+                return {'error': constant.CHECK_DATE}
         else:
             logger.error('[E] Check the Path, we can not find the member')
             logger.error('[E] v_market[%s] v_product[%s] v_member[%s]' %(v_marekt, v_product, v_member))
@@ -325,6 +350,15 @@ def UrlCheckView(v_market, v_product, v_member, v_date, v_item):
         logger.critical('[C] Input Path : v_product[%s]' %v_market)
         logger.critical('[C] Input Path : v_member[%s]' %v_market)
         logger.critical('   ')
+
+    
+def UrlCheckViewDetail(v_market, v_product, v_member, v_date, v_item):
+    pass
+
+
+def UrlCheckViewData(v_market, v_product, v_member, v_date, v_item):
+    pass
+
 
 
 

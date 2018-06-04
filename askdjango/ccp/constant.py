@@ -18,13 +18,14 @@ CHECK_USERNAME= "CHECK_USERNAME"
 CHECK_PASSWORD= "CHECK_PASSWORD"
 
 
-URL_MARKET_CCP      = "CCP"
-URL_PRODUCT_IRS_WON = "IRS_WON"
-URL_PRODUCT_IRS_USD = "IRS_USD"
-URL_MARKET_MEMBER   = "URL_MEMBER"
-URL_ITEM_LIST       = "LIST"
-URL_ITEM_DATA       = "DATA"
-URL_SEQ             = "URL_SEQ"
+URL_MARKET_CCP      = "ccp"
+URL_PRODUCT_IRS_WON = "irs_won"
+URL_PRODUCT_IRS_USD = "irs_usd"
+URL_MARKET_MEMBER   = "url_member"
+URL_ITEM_LIST       = "api_list"
+URL_ITEM_DETAIL     = "api_detail"
+URL_ITEM_DATA       = "api_data"
+URL_SEQ             = "url_seq"
 
 
 MARKET_CCP      = "ccp"
