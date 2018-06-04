@@ -13,7 +13,7 @@ router = DefaultRouter()
 #urlpatterns = router.urls
 
 
-
+#ex)http://localhost:8001/api-detail/ccp/won-irs/00002/20180528/tcpmih00101/00000000000
 urlpatterns = [
     url(r'^(?P<u_product>[\w/\-/]+)/(?P<u_member>[\w/]+)/(?P<u_date>[\d]+)/(?P<u_item>[\w/]+)/(?P<u_seq>[\d]+)$', views.api_detail) ,
     url(r'^(?P<u_product>[\w/\-/]+)/(?P<u_member>[\w/]+)/(?P<u_date>[\d]+)/(?P<u_item>[\w/]+)$', views.api_detail) ,

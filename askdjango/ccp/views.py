@@ -2,8 +2,9 @@
 ''' [완료]  DB queryset 처리  '''
 ''' [완료]  print를 logging 모듈을 사용하여 대체..'''
 '''        logging reference :  http://www.jinniahn.com/2016/10/python-logger.html '''
-''' [완료] 회원별 LIST 조회하는 기능 구현 '''
-''' [진행중] UrlCheckView -> Common , List, Detail, 로 분리  '''
+''' [완료]  회원별 LIST 조회하는 기능 구현 '''
+''' [완료]  UrlCheckView -> Common , List 로 분리  '''
+''' [진행중] LIST 응답 데이타(JSON) 만들기, 오름차순 해결 필요  '''
 
 from rest_framework import viewsets
 from .models import TBCP_MEMBER_INFO, TBCP_MEMBER_LIST_STAT_INFO, TBCP_MARKET_META_INFO, TBCP_PRODUCT_META_INFO, TBCP_ITEM_META_INFO, TBCP_MEMBER_LIST_DETAIL_INFO
@@ -123,8 +124,15 @@ class TBCP_MEMBER_LIST_STAT_INFO_ViewSet(viewsets.ModelViewSet):
                 #     item_dic['PRODUCT_INFO'] = item.PRODUCT_INFO
                 #     item_dic['MEMBER_INFO'] = item.MEMBER_INFO
                 item_dic['MARKET_INFO'] = qs.MARKET_INFO
-                item_dic['PRODUCT_INFO'] = qs.PRODUCT_INFO
+                item_dic['PRODUCT_INFO']= qs.PRODUCT_INFO
                 item_dic['MEMBER_INFO'] = qs.MEMBER_INFO
+                item_dic['TRADE_DATE']  = qs.TRADE_DATE
+                item_dic['ITEM_GROUP']  = qs.ITEM_GROUP
+                item_dic['ITEM_CODE']   = qs.ITEM_CODE
+                item_dic['ITES_SEQ']    = qs.ITEM_SEQ
+                item_dic['END_BUT']     = qs.END_BIT
+                item_dic['ERROR_CODE']  = constant.CHECK_OK 
+                item_dic['ERROR_TEXT']  = constant.CHECK_OK
 
                 self.logger.info('# Query exist O.K !!' )
                 self.logger.info('# Input v_market[%s]' % v_market)
@@ -153,7 +161,8 @@ class TBCP_MEMBER_LIST_STAT_INFO_ViewSet(viewsets.ModelViewSet):
 
             if qs:
                 self.logger.info('# Finds Query Data [%s]' %temp_path )
-                return HttpResponse('Finds Query Data {}'.format(temp_path))
+                return Response(item_dic)
+                # return HttpResponse('Finds Query Data {}'.format(temp_path))
 
             else:
                self.logger.critical('# No Finds Query Data [%s]' %temp_path )
@@ -188,23 +197,17 @@ class TBCP_MEMBER_LIST_DETAIL_INFO_ViewSet(viewsets.ModelViewSet):
         # URL Check, 입력된 값이 기본 URL 메타 값이 맞는지 사전 확인 
         rtUrlCheck = {}
         rtUrlCheck = UrlCheckViewCommon(v_market, v_product, v_member, v_date, v_item)
-        #URL COMMON MEMTA CHECK ('UrlCheckViewCommon()')
-        #URL MEMBER'S DETAIL LIST CHECK ('UrlCheckViewDetail()')
 
 
 
 
 
-        
 
 
-# URL PATH META IFNO CHECK
-# UrlCheckView 를 아래 3가지 기능으로 분리    
-# CHECK (공통)   메타값  'URL PATH' IN TBCP_*_META_TABLE or NOT 
-# CHECK (LIST)  리스트  'URL PATH' IN TBCP_MEMBER_LIST_STAT_INFO
-# CHECK (DETAIL)데이타  'URL PATH' IN TBCP_MEMBER_LIST_DETAIL_INFO
-# CHECK (POST)  데이타  'URL PATH' IN TBCP_MEMBER_DATA_INFO
-#   
+
+
+
+#UrlCheckViewCommon 
 def UrlCheckViewCommon(v_market, v_product, v_member, v_date, v_item):
     ErrorBit = 'NO'
     logger.info('# def UrlCheckViewCommon() is called...')
@@ -236,7 +239,8 @@ def UrlCheckViewCommon(v_market, v_product, v_member, v_date, v_item):
     if v_item == 'all':
         pass
     else:
-        qs = TBCP_ITEM_META_INFO.objects.get(Q(ITEM_GROUP = v_item) | Q(ITEM_CODE = v_item))
+        qs = TBCP_ITEM_META_INFO.objects.all()
+        qs = qs.filter(Q(ITEM_GROUP = v_item) | Q(ITEM_CODE = v_item))
         if qs:
             logger.info('# ITEM_INFO[%s] Existing  O.K !!' % v_item)
             pass
@@ -245,22 +249,9 @@ def UrlCheckViewCommon(v_market, v_product, v_member, v_date, v_item):
             logger.info('# ITEM_INFO[%s] No Existing. Error return !!' % v_item)
             return {'error':constant.CHECK_ITEM}
 
-    # if v_item == 'all':
-    #     pass
-    # else: 
-    #     qs = qs.filter(Q(ITEM_GROUP = v_item) | Q(ITEM_CODE = v_item))
-    #     if qs.exists():
-    #         print('qs.item : ')
-    #         pass
-    #     else:
-    #         ErrorBit = 'YES'
-    #         return {'error':constant.CHECK_ITEM}
-
-
 
     #MEMBER CHECK
-    qs = TBCP_MEMBER_INFO.objects.all()
-    qs = qs.filter(MARKET_INFO = v_market, PRODUCT_INFO = v_product, MEMBER_INFO = v_member)
+    qs = TBCP_MEMBER_INFO.objects.get(MARKET_INFO = v_market, PRODUCT_INFO = v_product, MEMBER_INFO = v_member)
     if qs:
         logger.info('# Input v_market:[%s] v_product:[%s] v_member:/[%s]' %(v_market, v_product, v_member))
         pass
@@ -317,7 +308,7 @@ def UrlCheckViewList(v_market, v_product, v_member, v_date, v_item):
         # 과거 데이타 조회 가능 여부 확인( OLD_DATE_USE == 'yes') 
         qs = TBCP_MEMBER_INFO.objects.get(MARKET_INFO=v_market, PRODUCT_INFO=v_product, MEMBER_INFO=v_member)
         if qs:
-            logger.info('# Query O.K !! v_market[%s] v_product[%s] v_member[%s]' %(v_marekt, v_product, v_member))
+            logger.info('# Query O.K !! v_market[%s] v_product[%s] v_member[%s]' %(v_market, v_product, v_member))
             old_date_use = qs.OLD_DATE_USE
             if old_date_use == 'yes':
                 pass

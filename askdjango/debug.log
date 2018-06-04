@@ -611,3 +611,455 @@
 2018-06-04 15:23:26,762	INFO	ccp	views.py[274]	# RtUrlCheck O.K !!..... 
 2018-06-04 15:23:26,762	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[98]	# UrlCheckViewCommon() Return O.K!! rtUrlCheck[CHECK_OK] 
 2018-06-04 15:23:26,762	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[102]	# Call UrlCheckViewList().... 
+2018-06-04 15:59:04,346	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 15:59:04,346	INFO	ccp	views.py[72]	# api_list() is called.... 
+2018-06-04 15:59:04,346	INFO	ccp	views.py[85]	# SystemDate[20180604]... 
+2018-06-04 15:59:04,347	INFO	ccp	views.py[90]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 15:59:04,347	INFO	ccp	views.py[210]	# def UrlCheckViewCommon() is called... 
+2018-06-04 15:59:04,350	INFO	ccp	views.py[218]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 15:59:04,353	INFO	ccp	views.py[228]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 15:59:04,355	INFO	ccp	views.py[265]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-04 15:59:04,355	INFO	ccp	views.py[274]	# RtUrlCheck O.K !!..... 
+2018-06-04 15:59:04,355	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[98]	# UrlCheckViewCommon() Return O.K!! rtUrlCheck[CHECK_OK] 
+2018-06-04 15:59:04,356	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[102]	# Call UrlCheckViewList().... 
+2018-06-04 15:59:04,356	INFO	ccp	views.py[289]	# UrlCheckViewList() starts .... 
+2018-06-04 15:59:04,356	INFO	ccp	views.py[297]	# SystemDate[20180604] , InputDate[20180528] 
+2018-06-04 15:59:04,356	WARNING	ccp	views.py[311]	  
+2018-06-04 15:59:04,356	WARNING	ccp	views.py[312]	------------------------ 
+2018-06-04 15:59:04,356	WARNING	ccp	views.py[313]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-04 15:59:04,356	WARNING	ccp	views.py[314]	------------------------ 
+2018-06-04 15:59:04,356	WARNING	ccp	views.py[315]	# BusinessDate[20180604] > InputDate[20180528] 
+2018-06-04 15:59:47,644	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 15:59:47,645	INFO	ccp	views.py[72]	# api_list() is called.... 
+2018-06-04 15:59:47,646	INFO	ccp	views.py[85]	# SystemDate[20180604]... 
+2018-06-04 15:59:47,646	INFO	ccp	views.py[90]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 15:59:47,646	INFO	ccp	views.py[210]	# def UrlCheckViewCommon() is called... 
+2018-06-04 15:59:47,650	INFO	ccp	views.py[218]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 15:59:47,652	INFO	ccp	views.py[228]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 15:59:47,654	INFO	ccp	views.py[265]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-04 15:59:47,654	INFO	ccp	views.py[274]	# RtUrlCheck O.K !!..... 
+2018-06-04 15:59:47,654	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[98]	# UrlCheckViewCommon() Return O.K!! rtUrlCheck[CHECK_OK] 
+2018-06-04 15:59:47,654	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[102]	# Call UrlCheckViewList().... 
+2018-06-04 15:59:47,654	INFO	ccp	views.py[289]	# UrlCheckViewList() starts .... 
+2018-06-04 15:59:47,655	INFO	ccp	views.py[297]	# SystemDate[20180604] , InputDate[20180528] 
+2018-06-04 15:59:47,655	WARNING	ccp	views.py[311]	  
+2018-06-04 15:59:47,655	WARNING	ccp	views.py[312]	------------------------ 
+2018-06-04 15:59:47,655	WARNING	ccp	views.py[313]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-04 15:59:47,655	WARNING	ccp	views.py[314]	------------------------ 
+2018-06-04 15:59:47,655	WARNING	ccp	views.py[315]	# BusinessDate[20180604] > InputDate[20180528] 
+2018-06-04 15:59:47,657	INFO	ccp	views.py[320]	# Query O.K !! v_market[ccp] v_product[won-irs] v_member[00002] 
+2018-06-04 15:59:47,662	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[129]	# Query exist O.K !! 
+2018-06-04 15:59:47,662	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[130]	# Input v_market[ccp] 
+2018-06-04 15:59:47,662	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# Input v_product[won-irs] 
+2018-06-04 15:59:47,663	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# Input v_member[00002] 
+2018-06-04 15:59:47,663	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[133]	# DB MARKET_INFO[ccp] 
+2018-06-04 15:59:47,663	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# DB PRODUCT_INFO[won-irs] 
+2018-06-04 15:59:47,663	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	# DB MEMBER_INFO[00002] 
+2018-06-04 15:59:47,663	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[148]	#---------Result------------ 
+2018-06-04 15:59:47,664	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[149]	# MEMBER_ASK_CNT[2] Before 
+2018-06-04 15:59:47,670	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[152]	# MEMBER_ASK_CNT[3] After 
+2018-06-04 15:59:47,670	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[155]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-06-04 16:03:14,555	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 16:03:14,556	INFO	ccp	views.py[72]	# api_list() is called.... 
+2018-06-04 16:03:14,556	INFO	ccp	views.py[85]	# SystemDate[20180604]... 
+2018-06-04 16:03:14,556	INFO	ccp	views.py[90]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 16:03:14,556	INFO	ccp	views.py[210]	# def UrlCheckViewCommon() is called... 
+2018-06-04 16:03:14,558	INFO	ccp	views.py[218]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 16:03:14,559	INFO	ccp	views.py[228]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 16:03:14,560	INFO	ccp	views.py[241]	# ITEM_INFO[tcpmih00101] Existing  O.K !! 
+2018-06-04 16:03:14,561	INFO	ccp	views.py[265]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-04 16:03:14,561	INFO	ccp	views.py[274]	# RtUrlCheck O.K !!..... 
+2018-06-04 16:03:14,562	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[98]	# UrlCheckViewCommon() Return O.K!! rtUrlCheck[CHECK_OK] 
+2018-06-04 16:03:14,562	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[102]	# Call UrlCheckViewList().... 
+2018-06-04 16:03:14,562	INFO	ccp	views.py[289]	# UrlCheckViewList() starts .... 
+2018-06-04 16:03:14,562	INFO	ccp	views.py[297]	# SystemDate[20180604] , InputDate[20180528] 
+2018-06-04 16:03:14,562	WARNING	ccp	views.py[311]	  
+2018-06-04 16:03:14,562	WARNING	ccp	views.py[312]	------------------------ 
+2018-06-04 16:03:14,562	WARNING	ccp	views.py[313]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-04 16:03:14,562	WARNING	ccp	views.py[314]	------------------------ 
+2018-06-04 16:03:14,563	WARNING	ccp	views.py[315]	# BusinessDate[20180604] > InputDate[20180528] 
+2018-06-04 16:03:14,564	INFO	ccp	views.py[320]	# Query O.K !! v_market[ccp] v_product[won-irs] v_member[00002] 
+2018-06-04 16:03:14,565	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[129]	# Query exist O.K !! 
+2018-06-04 16:03:14,565	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[130]	# Input v_market[ccp] 
+2018-06-04 16:03:14,565	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# Input v_product[won-irs] 
+2018-06-04 16:03:14,565	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# Input v_member[00002] 
+2018-06-04 16:03:14,565	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[133]	# DB MARKET_INFO[ccp] 
+2018-06-04 16:03:14,565	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# DB PRODUCT_INFO[won-irs] 
+2018-06-04 16:03:14,565	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	# DB MEMBER_INFO[00002] 
+2018-06-04 16:03:14,565	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[148]	#---------Result------------ 
+2018-06-04 16:03:14,565	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[149]	# MEMBER_ASK_CNT[3] Before 
+2018-06-04 16:03:14,568	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[152]	# MEMBER_ASK_CNT[4] After 
+2018-06-04 16:03:14,568	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[155]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'tcpmih00101']] 
+2018-06-04 16:03:18,692	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 16:03:18,693	INFO	ccp	views.py[72]	# api_list() is called.... 
+2018-06-04 16:03:18,693	INFO	ccp	views.py[85]	# SystemDate[20180604]... 
+2018-06-04 16:03:18,693	INFO	ccp	views.py[90]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 16:03:18,693	INFO	ccp	views.py[210]	# def UrlCheckViewCommon() is called... 
+2018-06-04 16:03:18,694	INFO	ccp	views.py[218]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 16:03:18,695	INFO	ccp	views.py[228]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 16:06:43,621	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 16:06:43,622	INFO	ccp	views.py[72]	# api_list() is called.... 
+2018-06-04 16:06:43,622	INFO	ccp	views.py[85]	# SystemDate[20180604]... 
+2018-06-04 16:06:43,622	INFO	ccp	views.py[90]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 16:06:43,622	INFO	ccp	views.py[210]	# def UrlCheckViewCommon() is called... 
+2018-06-04 16:06:43,624	INFO	ccp	views.py[218]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 16:06:43,625	INFO	ccp	views.py[228]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 16:06:43,626	INFO	ccp	views.py[241]	# ITEM_INFO[tcpmih00101] Existing  O.K !! 
+2018-06-04 16:06:43,628	INFO	ccp	views.py[265]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-04 16:06:43,628	INFO	ccp	views.py[274]	# RtUrlCheck O.K !!..... 
+2018-06-04 16:06:43,628	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[98]	# UrlCheckViewCommon() Return O.K!! rtUrlCheck[CHECK_OK] 
+2018-06-04 16:06:43,628	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[102]	# Call UrlCheckViewList().... 
+2018-06-04 16:06:43,628	INFO	ccp	views.py[289]	# UrlCheckViewList() starts .... 
+2018-06-04 16:06:43,628	INFO	ccp	views.py[297]	# SystemDate[20180604] , InputDate[20180528] 
+2018-06-04 16:06:43,628	WARNING	ccp	views.py[311]	  
+2018-06-04 16:06:43,629	WARNING	ccp	views.py[312]	------------------------ 
+2018-06-04 16:06:43,629	WARNING	ccp	views.py[313]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-04 16:06:43,629	WARNING	ccp	views.py[314]	------------------------ 
+2018-06-04 16:06:43,629	WARNING	ccp	views.py[315]	# BusinessDate[20180604] > InputDate[20180528] 
+2018-06-04 16:06:43,630	INFO	ccp	views.py[320]	# Query O.K !! v_market[ccp] v_product[won-irs] v_member[00002] 
+2018-06-04 16:06:43,631	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[129]	# Query exist O.K !! 
+2018-06-04 16:06:43,632	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[130]	# Input v_market[ccp] 
+2018-06-04 16:06:43,632	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# Input v_product[won-irs] 
+2018-06-04 16:06:43,632	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# Input v_member[00002] 
+2018-06-04 16:06:43,632	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[133]	# DB MARKET_INFO[ccp] 
+2018-06-04 16:06:43,632	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# DB PRODUCT_INFO[won-irs] 
+2018-06-04 16:06:43,632	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	# DB MEMBER_INFO[00002] 
+2018-06-04 16:06:43,632	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[148]	#---------Result------------ 
+2018-06-04 16:06:43,632	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[149]	# MEMBER_ASK_CNT[4] Before 
+2018-06-04 16:06:43,636	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[152]	# MEMBER_ASK_CNT[5] After 
+2018-06-04 16:06:43,636	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[155]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'tcpmih00101']] 
+2018-06-04 16:07:05,709	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 16:07:05,709	INFO	ccp	views.py[72]	# api_list() is called.... 
+2018-06-04 16:07:05,710	INFO	ccp	views.py[85]	# SystemDate[20180604]... 
+2018-06-04 16:07:05,710	INFO	ccp	views.py[90]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 16:07:05,710	INFO	ccp	views.py[210]	# def UrlCheckViewCommon() is called... 
+2018-06-04 16:07:05,711	INFO	ccp	views.py[218]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 16:07:05,712	INFO	ccp	views.py[228]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 16:09:33,945	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 16:09:33,946	INFO	ccp	views.py[72]	# api_list() is called.... 
+2018-06-04 16:09:33,947	INFO	ccp	views.py[85]	# SystemDate[20180604]... 
+2018-06-04 16:09:33,947	INFO	ccp	views.py[90]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 16:09:33,947	INFO	ccp	views.py[210]	# def UrlCheckViewCommon() is called... 
+2018-06-04 16:09:33,949	INFO	ccp	views.py[218]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 16:09:33,950	INFO	ccp	views.py[228]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 16:10:42,122	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 16:10:42,123	INFO	ccp	views.py[72]	# api_list() is called.... 
+2018-06-04 16:10:42,123	INFO	ccp	views.py[85]	# SystemDate[20180604]... 
+2018-06-04 16:10:42,123	INFO	ccp	views.py[90]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 16:10:42,123	INFO	ccp	views.py[210]	# def UrlCheckViewCommon() is called... 
+2018-06-04 16:10:42,126	INFO	ccp	views.py[218]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 16:10:42,127	INFO	ccp	views.py[228]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 16:10:42,129	INFO	ccp	views.py[244]	# ITEM_INFO[tcpmih00101] Existing  O.K !! 
+2018-06-04 16:10:42,130	INFO	ccp	views.py[268]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-04 16:10:42,130	INFO	ccp	views.py[277]	# RtUrlCheck O.K !!..... 
+2018-06-04 16:10:42,130	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[98]	# UrlCheckViewCommon() Return O.K!! rtUrlCheck[CHECK_OK] 
+2018-06-04 16:10:42,131	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[102]	# Call UrlCheckViewList().... 
+2018-06-04 16:10:42,131	INFO	ccp	views.py[292]	# UrlCheckViewList() starts .... 
+2018-06-04 16:10:42,131	INFO	ccp	views.py[300]	# SystemDate[20180604] , InputDate[20180528] 
+2018-06-04 16:10:42,131	WARNING	ccp	views.py[314]	  
+2018-06-04 16:10:42,131	WARNING	ccp	views.py[315]	------------------------ 
+2018-06-04 16:10:42,131	WARNING	ccp	views.py[316]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-04 16:10:42,131	WARNING	ccp	views.py[317]	------------------------ 
+2018-06-04 16:10:42,132	WARNING	ccp	views.py[318]	# BusinessDate[20180604] > InputDate[20180528] 
+2018-06-04 16:10:42,133	INFO	ccp	views.py[323]	# Query O.K !! v_market[ccp] v_product[won-irs] v_member[00002] 
+2018-06-04 16:10:42,136	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[129]	# Query exist O.K !! 
+2018-06-04 16:10:42,136	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[130]	# Input v_market[ccp] 
+2018-06-04 16:10:42,136	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# Input v_product[won-irs] 
+2018-06-04 16:10:42,136	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# Input v_member[00002] 
+2018-06-04 16:10:42,136	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[133]	# DB MARKET_INFO[ccp] 
+2018-06-04 16:10:42,136	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# DB PRODUCT_INFO[won-irs] 
+2018-06-04 16:10:42,136	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	# DB MEMBER_INFO[00002] 
+2018-06-04 16:10:42,137	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[148]	#---------Result------------ 
+2018-06-04 16:10:42,137	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[149]	# MEMBER_ASK_CNT[5] Before 
+2018-06-04 16:10:42,141	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[152]	# MEMBER_ASK_CNT[6] After 
+2018-06-04 16:10:42,141	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[155]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'tcpmih00101']] 
+2018-06-04 16:10:55,335	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 16:10:55,336	INFO	ccp	views.py[72]	# api_list() is called.... 
+2018-06-04 16:10:55,336	INFO	ccp	views.py[85]	# SystemDate[20180604]... 
+2018-06-04 16:10:55,336	INFO	ccp	views.py[90]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 16:10:55,336	INFO	ccp	views.py[210]	# def UrlCheckViewCommon() is called... 
+2018-06-04 16:10:55,337	INFO	ccp	views.py[218]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 16:10:55,338	INFO	ccp	views.py[228]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 16:10:55,339	INFO	ccp	views.py[244]	# ITEM_INFO[tcpmih00101] Existing  O.K !! 
+2018-06-04 16:10:55,341	INFO	ccp	views.py[268]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-04 16:10:55,341	INFO	ccp	views.py[277]	# RtUrlCheck O.K !!..... 
+2018-06-04 16:10:55,341	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[98]	# UrlCheckViewCommon() Return O.K!! rtUrlCheck[CHECK_OK] 
+2018-06-04 16:10:55,342	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[102]	# Call UrlCheckViewList().... 
+2018-06-04 16:10:55,342	INFO	ccp	views.py[292]	# UrlCheckViewList() starts .... 
+2018-06-04 16:10:55,342	INFO	ccp	views.py[300]	# SystemDate[20180604] , InputDate[20180528] 
+2018-06-04 16:10:55,342	WARNING	ccp	views.py[314]	  
+2018-06-04 16:10:55,342	WARNING	ccp	views.py[315]	------------------------ 
+2018-06-04 16:10:55,342	WARNING	ccp	views.py[316]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-04 16:10:55,342	WARNING	ccp	views.py[317]	------------------------ 
+2018-06-04 16:10:55,343	WARNING	ccp	views.py[318]	# BusinessDate[20180604] > InputDate[20180528] 
+2018-06-04 16:10:55,344	INFO	ccp	views.py[323]	# Query O.K !! v_market[ccp] v_product[won-irs] v_member[00002] 
+2018-06-04 16:10:55,346	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[129]	# Query exist O.K !! 
+2018-06-04 16:10:55,346	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[130]	# Input v_market[ccp] 
+2018-06-04 16:10:55,346	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# Input v_product[won-irs] 
+2018-06-04 16:10:55,346	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# Input v_member[00002] 
+2018-06-04 16:10:55,346	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[133]	# DB MARKET_INFO[ccp] 
+2018-06-04 16:10:55,347	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# DB PRODUCT_INFO[won-irs] 
+2018-06-04 16:10:55,347	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	# DB MEMBER_INFO[00002] 
+2018-06-04 16:10:55,347	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[148]	#---------Result------------ 
+2018-06-04 16:10:55,347	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[149]	# MEMBER_ASK_CNT[6] Before 
+2018-06-04 16:10:55,350	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[152]	# MEMBER_ASK_CNT[7] After 
+2018-06-04 16:10:55,350	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[155]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'tcpmih00101']] 
+2018-06-04 16:11:02,510	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 16:11:02,510	INFO	ccp	views.py[72]	# api_list() is called.... 
+2018-06-04 16:11:02,510	INFO	ccp	views.py[85]	# SystemDate[20180604]... 
+2018-06-04 16:11:02,510	INFO	ccp	views.py[90]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 16:11:02,510	INFO	ccp	views.py[210]	# def UrlCheckViewCommon() is called... 
+2018-06-04 16:11:02,512	INFO	ccp	views.py[218]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 16:11:02,513	INFO	ccp	views.py[228]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 16:11:02,513	INFO	ccp	views.py[248]	# ITEM_INFO[tcpmih00102] No Existing. Error return !! 
+2018-06-04 16:11:02,514	ERROR	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[95]	# UrlCheckViewCommon() ERROR_PATH [CHECK_ITEM] 
+2018-06-04 16:15:32,330	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 16:15:32,330	INFO	ccp	views.py[72]	# api_list() is called.... 
+2018-06-04 16:15:32,330	INFO	ccp	views.py[85]	# SystemDate[20180604]... 
+2018-06-04 16:15:32,331	INFO	ccp	views.py[90]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 16:15:32,331	INFO	ccp	views.py[210]	# def UrlCheckViewCommon() is called... 
+2018-06-04 16:15:32,333	INFO	ccp	views.py[218]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 16:15:32,334	INFO	ccp	views.py[228]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 16:15:32,335	INFO	ccp	views.py[242]	# ITEM_INFO[tcpmih00101] Existing  O.K !! 
+2018-06-04 16:15:32,336	INFO	ccp	views.py[253]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-04 16:15:32,336	INFO	ccp	views.py[262]	# RtUrlCheck O.K !!..... 
+2018-06-04 16:15:32,336	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[98]	# UrlCheckViewCommon() Return O.K!! rtUrlCheck[CHECK_OK] 
+2018-06-04 16:15:32,337	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[102]	# Call UrlCheckViewList().... 
+2018-06-04 16:15:32,337	INFO	ccp	views.py[277]	# UrlCheckViewList() starts .... 
+2018-06-04 16:15:32,337	INFO	ccp	views.py[285]	# SystemDate[20180604] , InputDate[20180528] 
+2018-06-04 16:15:32,337	WARNING	ccp	views.py[299]	  
+2018-06-04 16:15:32,337	WARNING	ccp	views.py[300]	------------------------ 
+2018-06-04 16:15:32,337	WARNING	ccp	views.py[301]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-04 16:15:32,337	WARNING	ccp	views.py[302]	------------------------ 
+2018-06-04 16:15:32,337	WARNING	ccp	views.py[303]	# BusinessDate[20180604] > InputDate[20180528] 
+2018-06-04 16:15:32,338	INFO	ccp	views.py[308]	# Query O.K !! v_market[ccp] v_product[won-irs] v_member[00002] 
+2018-06-04 16:15:32,340	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[129]	# Query exist O.K !! 
+2018-06-04 16:15:32,340	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[130]	# Input v_market[ccp] 
+2018-06-04 16:15:32,340	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# Input v_product[won-irs] 
+2018-06-04 16:15:32,340	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# Input v_member[00002] 
+2018-06-04 16:15:32,340	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[133]	# DB MARKET_INFO[ccp] 
+2018-06-04 16:15:32,340	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# DB PRODUCT_INFO[won-irs] 
+2018-06-04 16:15:32,340	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	# DB MEMBER_INFO[00002] 
+2018-06-04 16:15:32,340	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[148]	#---------Result------------ 
+2018-06-04 16:15:32,340	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[149]	# MEMBER_ASK_CNT[7] Before 
+2018-06-04 16:15:32,344	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[152]	# MEMBER_ASK_CNT[8] After 
+2018-06-04 16:15:32,344	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[155]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'tcpmih00101']] 
+2018-06-04 16:15:50,754	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[63]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 16:15:50,754	INFO	ccp	views.py[72]	# api_list() is called.... 
+2018-06-04 16:15:50,755	INFO	ccp	views.py[85]	# SystemDate[20180604]... 
+2018-06-04 16:15:50,755	INFO	ccp	views.py[90]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 16:15:50,755	INFO	ccp	views.py[210]	# def UrlCheckViewCommon() is called... 
+2018-06-04 16:15:50,756	INFO	ccp	views.py[218]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 16:15:50,757	INFO	ccp	views.py[228]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 16:15:50,758	INFO	ccp	views.py[246]	# ITEM_INFO[tcpmih00102] No Existing. Error return !! 
+2018-06-04 16:15:50,758	ERROR	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[95]	# UrlCheckViewCommon() ERROR_PATH [CHECK_ITEM] 
+2018-06-04 17:14:36,621	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[64]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 17:14:36,622	INFO	ccp	views.py[73]	# api_list() is called.... 
+2018-06-04 17:14:36,622	INFO	ccp	views.py[86]	# SystemDate[20180604]... 
+2018-06-04 17:14:36,622	INFO	ccp	views.py[91]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 17:14:36,622	INFO	ccp	views.py[206]	# def UrlCheckViewCommon() is called... 
+2018-06-04 17:14:36,624	INFO	ccp	views.py[214]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 17:14:36,625	INFO	ccp	views.py[224]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 17:14:36,627	INFO	ccp	views.py[249]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-04 17:14:36,627	INFO	ccp	views.py[258]	# RtUrlCheck O.K !!..... 
+2018-06-04 17:14:36,627	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[99]	# UrlCheckViewCommon() Return O.K!! rtUrlCheck[CHECK_OK] 
+2018-06-04 17:14:36,627	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[103]	# Call UrlCheckViewList().... 
+2018-06-04 17:14:36,627	INFO	ccp	views.py[273]	# UrlCheckViewList() starts .... 
+2018-06-04 17:14:36,627	INFO	ccp	views.py[281]	# SystemDate[20180604] , InputDate[20180528] 
+2018-06-04 17:14:36,627	WARNING	ccp	views.py[295]	  
+2018-06-04 17:14:36,627	WARNING	ccp	views.py[296]	------------------------ 
+2018-06-04 17:14:36,628	WARNING	ccp	views.py[297]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-04 17:14:36,628	WARNING	ccp	views.py[298]	------------------------ 
+2018-06-04 17:14:36,628	WARNING	ccp	views.py[299]	# BusinessDate[20180604] > InputDate[20180528] 
+2018-06-04 17:14:36,629	INFO	ccp	views.py[304]	# Query O.K !! v_market[ccp] v_product[won-irs] v_member[00002] 
+2018-06-04 17:14:36,630	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[130]	# Query exist O.K !! 
+2018-06-04 17:14:36,630	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# Input v_market[ccp] 
+2018-06-04 17:14:36,630	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# Input v_product[won-irs] 
+2018-06-04 17:14:36,631	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[133]	# Input v_member[00002] 
+2018-06-04 17:14:36,631	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# DB MARKET_INFO[ccp] 
+2018-06-04 17:14:36,631	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	# DB PRODUCT_INFO[won-irs] 
+2018-06-04 17:14:36,631	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[136]	# DB MEMBER_INFO[00002] 
+2018-06-04 17:14:36,631	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[149]	#---------Result------------ 
+2018-06-04 17:14:36,631	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[150]	# MEMBER_ASK_CNT[8] Before 
+2018-06-04 17:14:36,634	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[153]	# MEMBER_ASK_CNT[9] After 
+2018-06-04 17:14:36,634	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[156]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-06-04 17:15:12,749	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[64]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 17:15:12,749	INFO	ccp	views.py[73]	# api_list() is called.... 
+2018-06-04 17:15:12,750	INFO	ccp	views.py[86]	# SystemDate[20180604]... 
+2018-06-04 17:15:12,750	INFO	ccp	views.py[91]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 17:15:12,750	INFO	ccp	views.py[206]	# def UrlCheckViewCommon() is called... 
+2018-06-04 17:15:12,752	INFO	ccp	views.py[214]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 17:15:12,753	INFO	ccp	views.py[224]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 17:15:12,754	INFO	ccp	views.py[249]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-04 17:15:12,754	INFO	ccp	views.py[258]	# RtUrlCheck O.K !!..... 
+2018-06-04 17:15:12,754	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[99]	# UrlCheckViewCommon() Return O.K!! rtUrlCheck[CHECK_OK] 
+2018-06-04 17:15:12,754	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[103]	# Call UrlCheckViewList().... 
+2018-06-04 17:15:12,755	INFO	ccp	views.py[273]	# UrlCheckViewList() starts .... 
+2018-06-04 17:15:12,755	INFO	ccp	views.py[281]	# SystemDate[20180604] , InputDate[20180528] 
+2018-06-04 17:15:12,755	WARNING	ccp	views.py[295]	  
+2018-06-04 17:15:12,755	WARNING	ccp	views.py[296]	------------------------ 
+2018-06-04 17:15:12,755	WARNING	ccp	views.py[297]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-04 17:15:12,755	WARNING	ccp	views.py[298]	------------------------ 
+2018-06-04 17:15:12,755	WARNING	ccp	views.py[299]	# BusinessDate[20180604] > InputDate[20180528] 
+2018-06-04 17:15:12,756	INFO	ccp	views.py[304]	# Query O.K !! v_market[ccp] v_product[won-irs] v_member[00002] 
+2018-06-04 17:15:12,758	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[130]	# Query exist O.K !! 
+2018-06-04 17:15:12,758	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# Input v_market[ccp] 
+2018-06-04 17:15:12,758	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# Input v_product[won-irs] 
+2018-06-04 17:15:12,758	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[133]	# Input v_member[00002] 
+2018-06-04 17:15:12,758	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# DB MARKET_INFO[ccp] 
+2018-06-04 17:15:12,758	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	# DB PRODUCT_INFO[won-irs] 
+2018-06-04 17:15:12,758	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[136]	# DB MEMBER_INFO[00002] 
+2018-06-04 17:15:12,758	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[149]	#---------Result------------ 
+2018-06-04 17:15:12,758	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[150]	# MEMBER_ASK_CNT[9] Before 
+2018-06-04 17:15:12,762	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[153]	# MEMBER_ASK_CNT[10] After 
+2018-06-04 17:15:12,762	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[156]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-06-04 17:15:48,837	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[64]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 17:15:48,838	INFO	ccp	views.py[73]	# api_list() is called.... 
+2018-06-04 17:15:48,838	INFO	ccp	views.py[86]	# SystemDate[20180604]... 
+2018-06-04 17:15:48,838	INFO	ccp	views.py[91]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 17:15:48,838	INFO	ccp	views.py[206]	# def UrlCheckViewCommon() is called... 
+2018-06-04 17:15:48,840	INFO	ccp	views.py[214]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 17:15:48,841	INFO	ccp	views.py[224]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 17:15:48,843	INFO	ccp	views.py[249]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-04 17:15:48,843	INFO	ccp	views.py[258]	# RtUrlCheck O.K !!..... 
+2018-06-04 17:15:48,843	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[99]	# UrlCheckViewCommon() Return O.K!! rtUrlCheck[CHECK_OK] 
+2018-06-04 17:15:48,843	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[103]	# Call UrlCheckViewList().... 
+2018-06-04 17:15:48,843	INFO	ccp	views.py[273]	# UrlCheckViewList() starts .... 
+2018-06-04 17:15:48,843	INFO	ccp	views.py[281]	# SystemDate[20180604] , InputDate[20180528] 
+2018-06-04 17:15:48,843	WARNING	ccp	views.py[295]	  
+2018-06-04 17:15:48,843	WARNING	ccp	views.py[296]	------------------------ 
+2018-06-04 17:15:48,844	WARNING	ccp	views.py[297]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-04 17:15:48,844	WARNING	ccp	views.py[298]	------------------------ 
+2018-06-04 17:15:48,844	WARNING	ccp	views.py[299]	# BusinessDate[20180604] > InputDate[20180528] 
+2018-06-04 17:15:48,845	INFO	ccp	views.py[304]	# Query O.K !! v_market[ccp] v_product[won-irs] v_member[00002] 
+2018-06-04 17:15:48,846	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[130]	# Query exist O.K !! 
+2018-06-04 17:15:48,846	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# Input v_market[ccp] 
+2018-06-04 17:15:48,847	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# Input v_product[won-irs] 
+2018-06-04 17:15:48,847	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[133]	# Input v_member[00002] 
+2018-06-04 17:15:48,847	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# DB MARKET_INFO[ccp] 
+2018-06-04 17:15:48,847	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	# DB PRODUCT_INFO[won-irs] 
+2018-06-04 17:15:48,847	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[136]	# DB MEMBER_INFO[00002] 
+2018-06-04 17:15:48,847	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[149]	#---------Result------------ 
+2018-06-04 17:15:48,847	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[150]	# MEMBER_ASK_CNT[10] Before 
+2018-06-04 17:15:48,850	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[153]	# MEMBER_ASK_CNT[11] After 
+2018-06-04 17:15:48,850	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[156]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-06-04 17:16:32,860	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[64]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 17:16:32,861	INFO	ccp	views.py[73]	# api_list() is called.... 
+2018-06-04 17:16:32,861	INFO	ccp	views.py[86]	# SystemDate[20180604]... 
+2018-06-04 17:16:32,861	INFO	ccp	views.py[91]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 17:16:32,861	INFO	ccp	views.py[208]	# def UrlCheckViewCommon() is called... 
+2018-06-04 17:16:32,863	INFO	ccp	views.py[216]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 17:16:32,864	INFO	ccp	views.py[226]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 17:16:32,866	INFO	ccp	views.py[251]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-04 17:16:32,866	INFO	ccp	views.py[260]	# RtUrlCheck O.K !!..... 
+2018-06-04 17:16:32,866	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[99]	# UrlCheckViewCommon() Return O.K!! rtUrlCheck[CHECK_OK] 
+2018-06-04 17:16:32,866	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[103]	# Call UrlCheckViewList().... 
+2018-06-04 17:16:32,866	INFO	ccp	views.py[275]	# UrlCheckViewList() starts .... 
+2018-06-04 17:16:32,866	INFO	ccp	views.py[283]	# SystemDate[20180604] , InputDate[20180528] 
+2018-06-04 17:16:32,866	WARNING	ccp	views.py[297]	  
+2018-06-04 17:16:32,867	WARNING	ccp	views.py[298]	------------------------ 
+2018-06-04 17:16:32,867	WARNING	ccp	views.py[299]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-04 17:16:32,867	WARNING	ccp	views.py[300]	------------------------ 
+2018-06-04 17:16:32,867	WARNING	ccp	views.py[301]	# BusinessDate[20180604] > InputDate[20180528] 
+2018-06-04 17:16:32,868	INFO	ccp	views.py[306]	# Query O.K !! v_market[ccp] v_product[won-irs] v_member[00002] 
+2018-06-04 17:16:32,869	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[130]	# Query exist O.K !! 
+2018-06-04 17:16:32,870	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# Input v_market[ccp] 
+2018-06-04 17:16:32,870	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# Input v_product[won-irs] 
+2018-06-04 17:16:32,870	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[133]	# Input v_member[00002] 
+2018-06-04 17:16:32,870	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# DB MARKET_INFO[ccp] 
+2018-06-04 17:16:32,870	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	# DB PRODUCT_INFO[won-irs] 
+2018-06-04 17:16:32,870	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[136]	# DB MEMBER_INFO[00002] 
+2018-06-04 17:16:32,870	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[149]	#---------Result------------ 
+2018-06-04 17:16:32,870	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[150]	# MEMBER_ASK_CNT[11] Before 
+2018-06-04 17:16:32,873	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[153]	# MEMBER_ASK_CNT[12] After 
+2018-06-04 17:16:32,874	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[156]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-06-04 17:16:45,643	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[64]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 17:16:45,644	INFO	ccp	views.py[73]	# api_list() is called.... 
+2018-06-04 17:16:45,644	INFO	ccp	views.py[86]	# SystemDate[20180604]... 
+2018-06-04 17:16:45,645	INFO	ccp	views.py[91]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 17:16:45,645	INFO	ccp	views.py[208]	# def UrlCheckViewCommon() is called... 
+2018-06-04 17:16:45,647	INFO	ccp	views.py[216]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 17:16:45,648	INFO	ccp	views.py[226]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 17:16:45,649	INFO	ccp	views.py[251]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-04 17:16:45,649	INFO	ccp	views.py[260]	# RtUrlCheck O.K !!..... 
+2018-06-04 17:16:45,649	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[99]	# UrlCheckViewCommon() Return O.K!! rtUrlCheck[CHECK_OK] 
+2018-06-04 17:16:45,649	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[103]	# Call UrlCheckViewList().... 
+2018-06-04 17:16:45,649	INFO	ccp	views.py[275]	# UrlCheckViewList() starts .... 
+2018-06-04 17:16:45,650	INFO	ccp	views.py[283]	# SystemDate[20180604] , InputDate[20180528] 
+2018-06-04 17:16:45,650	WARNING	ccp	views.py[297]	  
+2018-06-04 17:16:45,650	WARNING	ccp	views.py[298]	------------------------ 
+2018-06-04 17:16:45,650	WARNING	ccp	views.py[299]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-04 17:16:45,650	WARNING	ccp	views.py[300]	------------------------ 
+2018-06-04 17:16:45,650	WARNING	ccp	views.py[301]	# BusinessDate[20180604] > InputDate[20180528] 
+2018-06-04 17:16:45,651	INFO	ccp	views.py[306]	# Query O.K !! v_market[ccp] v_product[won-irs] v_member[00002] 
+2018-06-04 17:16:45,653	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[130]	# Query exist O.K !! 
+2018-06-04 17:16:45,653	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# Input v_market[ccp] 
+2018-06-04 17:16:45,653	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# Input v_product[won-irs] 
+2018-06-04 17:16:45,653	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[133]	# Input v_member[00002] 
+2018-06-04 17:16:45,653	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# DB MARKET_INFO[ccp] 
+2018-06-04 17:16:45,653	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	# DB PRODUCT_INFO[won-irs] 
+2018-06-04 17:16:45,653	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[136]	# DB MEMBER_INFO[00002] 
+2018-06-04 17:16:45,653	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[149]	#---------Result------------ 
+2018-06-04 17:16:45,653	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[150]	# MEMBER_ASK_CNT[12] Before 
+2018-06-04 17:16:45,656	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[153]	# MEMBER_ASK_CNT[13] After 
+2018-06-04 17:16:45,656	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[156]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-06-04 17:18:03,980	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[64]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 17:18:03,981	INFO	ccp	views.py[73]	# api_list() is called.... 
+2018-06-04 17:18:03,981	INFO	ccp	views.py[86]	# SystemDate[20180604]... 
+2018-06-04 17:18:03,981	INFO	ccp	views.py[91]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 17:18:03,981	INFO	ccp	views.py[208]	# def UrlCheckViewCommon() is called... 
+2018-06-04 17:18:03,983	INFO	ccp	views.py[216]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 17:18:03,984	INFO	ccp	views.py[226]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 17:18:03,985	INFO	ccp	views.py[251]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-04 17:18:03,986	INFO	ccp	views.py[260]	# RtUrlCheck O.K !!..... 
+2018-06-04 17:18:03,986	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[99]	# UrlCheckViewCommon() Return O.K!! rtUrlCheck[CHECK_OK] 
+2018-06-04 17:18:03,986	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[103]	# Call UrlCheckViewList().... 
+2018-06-04 17:18:03,986	INFO	ccp	views.py[275]	# UrlCheckViewList() starts .... 
+2018-06-04 17:18:03,986	INFO	ccp	views.py[283]	# SystemDate[20180604] , InputDate[20180528] 
+2018-06-04 17:18:03,986	WARNING	ccp	views.py[297]	  
+2018-06-04 17:18:03,986	WARNING	ccp	views.py[298]	------------------------ 
+2018-06-04 17:18:03,986	WARNING	ccp	views.py[299]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-04 17:18:03,987	WARNING	ccp	views.py[300]	------------------------ 
+2018-06-04 17:18:03,987	WARNING	ccp	views.py[301]	# BusinessDate[20180604] > InputDate[20180528] 
+2018-06-04 17:18:03,988	INFO	ccp	views.py[306]	# Query O.K !! v_market[ccp] v_product[won-irs] v_member[00002] 
+2018-06-04 17:18:03,989	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[130]	# Query exist O.K !! 
+2018-06-04 17:18:03,989	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[131]	# Input v_market[ccp] 
+2018-06-04 17:18:03,990	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[132]	# Input v_product[won-irs] 
+2018-06-04 17:18:03,990	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[133]	# Input v_member[00002] 
+2018-06-04 17:18:03,990	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[134]	# DB MARKET_INFO[ccp] 
+2018-06-04 17:18:03,990	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[135]	# DB PRODUCT_INFO[won-irs] 
+2018-06-04 17:18:03,990	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[136]	# DB MEMBER_INFO[00002] 
+2018-06-04 17:18:03,990	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[149]	#---------Result------------ 
+2018-06-04 17:18:03,990	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[150]	# MEMBER_ASK_CNT[13] Before 
+2018-06-04 17:18:03,993	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[153]	# MEMBER_ASK_CNT[14] After 
+2018-06-04 17:18:03,993	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[156]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
+2018-06-04 17:25:00,869	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[64]	TBCP_MEMBER_LIST_STAT_INFO_ViewSet.__init__ is callled 
+2018-06-04 17:25:00,872	INFO	ccp	views.py[73]	# api_list() is called.... 
+2018-06-04 17:25:00,872	INFO	ccp	views.py[86]	# SystemDate[20180604]... 
+2018-06-04 17:25:00,872	INFO	ccp	views.py[91]	# UrlCheckViewCommon() is called ..... 
+2018-06-04 17:25:00,872	INFO	ccp	views.py[213]	# def UrlCheckViewCommon() is called... 
+2018-06-04 17:25:00,874	INFO	ccp	views.py[221]	# MARKET_INFO[ccp] Existing  O.K !! 
+2018-06-04 17:25:00,875	INFO	ccp	views.py[231]	# PRODUCT_INFO[won-irs] Existing  O.K !! 
+2018-06-04 17:25:00,877	INFO	ccp	views.py[256]	# Input v_market:[ccp] v_product:[won-irs] v_member:/[00002] 
+2018-06-04 17:25:00,877	INFO	ccp	views.py[265]	# RtUrlCheck O.K !!..... 
+2018-06-04 17:25:00,877	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[99]	# UrlCheckViewCommon() Return O.K!! rtUrlCheck[CHECK_OK] 
+2018-06-04 17:25:00,877	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[103]	# Call UrlCheckViewList().... 
+2018-06-04 17:25:00,877	INFO	ccp	views.py[280]	# UrlCheckViewList() starts .... 
+2018-06-04 17:25:00,877	INFO	ccp	views.py[288]	# SystemDate[20180604] , InputDate[20180528] 
+2018-06-04 17:25:00,877	WARNING	ccp	views.py[302]	  
+2018-06-04 17:25:00,877	WARNING	ccp	views.py[303]	------------------------ 
+2018-06-04 17:25:00,878	WARNING	ccp	views.py[304]	#[W] Check the InputDate : Past Date has Inputed 
+2018-06-04 17:25:00,878	WARNING	ccp	views.py[305]	------------------------ 
+2018-06-04 17:25:00,878	WARNING	ccp	views.py[306]	# BusinessDate[20180604] > InputDate[20180528] 
+2018-06-04 17:25:00,879	INFO	ccp	views.py[311]	# Query O.K !! v_market[ccp] v_product[won-irs] v_member[00002] 
+2018-06-04 17:25:00,880	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[137]	# Query exist O.K !! 
+2018-06-04 17:25:00,880	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[138]	# Input v_market[ccp] 
+2018-06-04 17:25:00,880	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[139]	# Input v_product[won-irs] 
+2018-06-04 17:25:00,880	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[140]	# Input v_member[00002] 
+2018-06-04 17:25:00,881	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[141]	# DB MARKET_INFO[ccp] 
+2018-06-04 17:25:00,881	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[142]	# DB PRODUCT_INFO[won-irs] 
+2018-06-04 17:25:00,881	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[143]	# DB MEMBER_INFO[00002] 
+2018-06-04 17:25:00,881	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[156]	#---------Result------------ 
+2018-06-04 17:25:00,881	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[157]	# MEMBER_ASK_CNT[14] Before 
+2018-06-04 17:25:00,884	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[160]	# MEMBER_ASK_CNT[15] After 
+2018-06-04 17:25:00,884	INFO	ccp.TBCP_MEMBER_LIST_STAT_INFO_ViewSet	views.py[163]	# Finds Query Data [['api-list', 'ccp', 'won-irs', '00002', '20180528', 'all']] 
