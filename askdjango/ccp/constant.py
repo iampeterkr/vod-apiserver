@@ -33,3 +33,8 @@ IRS_WON         = "irs_won"
 IRS_USD         = "irs_usd"
 NDF             = "ndf"
 FX              = "fx"
+
+MARKET_INFO = "market_info:"
+PRODUCT_INFO = "irs-won:"
+ITEM_GROUP = ["all", "clearing", "settlement", 'risk', 'pricing']
+ITEM_CODE = ['tcpmih00101', 'tcpmih00201', 'tcpmih00102', 'tcpmih00202']

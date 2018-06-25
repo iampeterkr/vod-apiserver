@@ -4,23 +4,30 @@
 '''        logging reference :  http://www.jinniahn.com/2016/10/python-logger.html '''
 ''' [완료]  회원별 LIST 조회하는 기능 구현 '''
 ''' [완료]  UrlCheckView -> Common , List 로 분리  '''
-''' [진행중] LIST 응답 데이타(JSON) 만들기, 오름차순 해결 필요  '''
+''' [완료]  LIST 응답 데이타(JSON) 만들기, Response 오름차순 해결(OrderedDict) '''
+
 
 from rest_framework import viewsets
 from .models import TBCP_MEMBER_INFO, TBCP_MEMBER_LIST_STAT_INFO, TBCP_MARKET_META_INFO, TBCP_PRODUCT_META_INFO, TBCP_ITEM_META_INFO, TBCP_MEMBER_LIST_DETAIL_INFO
 from .serializers import TBCP_MEMBER_INFO_Serializer, TBCP_MEMBER_LIST_STAT_INFO_Serializer, TBCP_MARKET_META_INFO_Serializer, TBCP_PRODUCT_META_INFO_Serializer, TBCP_ITEM_META_INFO_Serializer, TBCP_MEMBER_LIST_DETAIL_INFO_Serializer
 from rest_framework.response import Response
+from rest_framework import status
 
 # Create your views here.
 from django.shortcuts import render
 from rest_framework.viewsets import ReadOnlyModelViewSet, ModelViewSet
 from rest_framework.decorators import list_route
-from django.http import HttpResponse
+from django.http import JsonResponse, HttpResponse
 from django.utils.http import urlencode
 from django.core.exceptions import ObjectDoesNotExist
 from . import constant
+from . import constant as const 
 import datetime
 from django.db.models import Q
+#OrderedDict
+from collections import OrderedDict
+
+
 
 # logging
 import logging                            #<---- 1. 로그 모듈 
@@ -65,11 +72,13 @@ class TBCP_MEMBER_LIST_STAT_INFO_ViewSet(viewsets.ModelViewSet):
 
 
     queryset = TBCP_MEMBER_LIST_STAT_INFO.objects.all()
-    serializer_class = TBCP_MEMBER_LIST_STAT_INFO_Serializer
-
+    # serializer_class = TBCP_MEMBER_LIST_STAT_INFO_Serializer
+    serializer_class = TBCP_MEMBER_LIST_STAT_INFO_Serializer(queryset)
 
     @list_route()
     def api_list(self, request, *args, **kwargs):
+        item_dic = OrderedDict()
+
         logger.info('# api_list() is called....')
         temp_path = self.request.path[1:] # 맨앞 '/' 제거
         temp_path = temp_path.lower() # 입력값 lower 변경 
@@ -94,7 +103,8 @@ class TBCP_MEMBER_LIST_STAT_INFO_ViewSet(viewsets.ModelViewSet):
         #error 처리 
         if rtUrlCheck['error'] != constant.CHECK_OK:
             self.logger.error('# UrlCheckViewCommon() ERROR_PATH [%s]' % rtUrlCheck['error'])
-            return HttpResponse('UrlCheckViewCommon() ERROR_PATH : ', rtUrlCheck['error'])
+            return Response('UrlCheckViewCommon() ERROR_PATH [%s]' %temp_path, status = status.HTTP_400_BAD_REQUEST)
+            # return HttpResponse('UrlCheckViewCommon() ERROR_PATH : ', rtUrlCheck['error'])
         else: # O.K
             self.logger.info('# UrlCheckViewCommon() Return O.K!! rtUrlCheck[%s]' % rtUrlCheck['error'])
             pass
@@ -110,63 +120,166 @@ class TBCP_MEMBER_LIST_STAT_INFO_ViewSet(viewsets.ModelViewSet):
             pass
 
 
-        # Query Memeber's List Data information 
-        try:
-            qs = TBCP_MEMBER_LIST_STAT_INFO.objects.get(MARKET_INFO = v_market, PRODUCT_INFO = v_product, MEMBER_INFO = v_member)
-            # qs = TBCP_MEMBER_LIST_STAT_INFO.objects.all()
-            # qs = qs.filter(MARKET_INFO = v_market, PRODUCT_INFO = v_product, MEMBER_INFO = v_member)
-            # qs = TBCP_MEMBER_LIST_STAT_INFO.objects.filter(MEMBER_INFO = v_member)
-            if qs:
-                item_dic = {}
-                # case : As using 'qs.ojbects.all()' 
-                # for item in qs:
-                #     item_dic['MARKET_INFO'] = item.MARKET_INFO
-                #     item_dic['PRODUCT_INFO'] = item.PRODUCT_INFO
-                #     item_dic['MEMBER_INFO'] = item.MEMBER_INFO
-                item_dic['MARKET_INFO'] = qs.MARKET_INFO
-                item_dic['PRODUCT_INFO']= qs.PRODUCT_INFO
-                item_dic['MEMBER_INFO'] = qs.MEMBER_INFO
-                item_dic['TRADE_DATE']  = qs.TRADE_DATE
-                item_dic['ITEM_GROUP']  = qs.ITEM_GROUP
-                item_dic['ITEM_CODE']   = qs.ITEM_CODE
-                item_dic['ITES_SEQ']    = qs.ITEM_SEQ
-                item_dic['END_BUT']     = qs.END_BIT
-                item_dic['ERROR_CODE']  = constant.CHECK_OK 
-                item_dic['ERROR_TEXT']  = constant.CHECK_OK
+        # item_code check 
+        if v_item == 'all':
+            qs = TBCP_MEMBER_LIST_STAT_INFO.objects.filter(MEMBER_INFO = v_member)
+            print('qs count = %s' %qs.count())
+        elif v_item in constant.ITEM_GROUP:
+            qs = TBCP_MEMBER_LIST_STAT_INFO.objects.filter(ITEM_GROUP = v_item)
+            print('qs count = %s' %qs.count())
+        elif v_item in constant.ITEM_CODE:
+            qs = TBCP_MEMBER_LIST_STAT_INFO.objects.filter(ITEM_CODE = v_item)
+            print('qs count = %s' %qs.count())
+        else:
+            print ('error')
 
-                self.logger.info('# Query exist O.K !!' )
-                self.logger.info('# Input v_market[%s]' % v_market)
-                self.logger.info('# Input v_product[%s]' % v_product)
-                self.logger.info('# Input v_member[%s]' % v_member)
-                self.logger.info('# DB MARKET_INFO[%s]' %item_dic['MARKET_INFO'])
-                self.logger.info('# DB PRODUCT_INFO[%s]' %item_dic['PRODUCT_INFO'])
-                self.logger.info('# DB MEMBER_INFO[%s]' %item_dic['MEMBER_INFO'])
+        temp_list = []
+        temp_str = ''
+        for i in qs:
+            temp_list.append(constant.MARKET_INFO +  i.MARKET_INFO)
+            temp_list.append(constant.PRODUCT_INFO + i.PRODUCT_INFO)
+            print (temp_list)
+        # return Response(temp_list, status=None)
+        # response['Content-Disposition'] = 'attachment; filename="{}"'.format(filename)
+        return Response(
+                        {
+                            'data' :qs.values(  'MARKET_INFO',\
+                                                'PRODUCT_INFO',\
+                                                'MEMBER_INFO',\
+                                                'TRADE_DATE',\
+                                                'ITEM_GROUP',\
+                                                'ITEM_CODE',\
+                                                'ITEM_SEQ',\
+                                                'END_BIT'),
+                            'ErrorCode' :'Error number explain ',
+                            'ErrorText':'error text explaing',
+                            'Input URL PATH' : temp_path
+                        },
+                        status=status.HTTP_200_OK,
+                        )
 
-        except ObjectDoesNotExist as err:
-                self.logger.error('# DB[TBCP_MEMBER_LIST_STAT_INFO] ObjectDoesNotExist ')
-                self.logger.info('# Input v_market[%s]' % v_market)
-                self.logger.info('# Input v_product[%s]' % v_product)
-                self.logger.info('# Input v_member[%s]' % v_member)
-                self.logger.info('# DB MARKET_INFO[%s]' %item_dic['MARKET_INFO'])
-                self.logger.info('# DB PRODUCT_INFO[%s]' %item_dic['PRODUCT_INFO'])
-                self.logger.info('# DB MEMBER_INFO[%s]' %item_dic['MEMBER_INFO'])
-                return HttpResponse('DB[TBCP_MEMBER_LIST_STAT_INFO] ObjectDoesNotExist : {}'.format(ObjectDoesNotExist))
 
-        else :
-            self.logger.info('#---------Result------------' )
-            self.logger.info('# MEMBER_ASK_CNT[%s] Before' %qs.MEMBER_ASK_CNT)
-            qs.MEMBER_ASK_CNT = qs.MEMBER_ASK_CNT + 1
-            qs.save()
-            self.logger.info('# MEMBER_ASK_CNT[%s] After' %qs.MEMBER_ASK_CNT)
+        if qs_itemcode:
+            print ('개별 입력 ')
+            # Query Memeber's List Data information 
+            try:
+                # qs = TBCP_MEMBER_LIST_STAT_INFO.objects.get(MARKET_INFO = v_market, PRODUCT_INFO = v_product, MEMBER_INFO = v_member, ITEM_CODE = v_item)
+                qs = TBCP_MEMBER_LIST_STAT_INFO.objects.all()
+                qs = qs.filter(MARKET_INFO = v_market, PRODUCT_INFO = v_product, MEMBER_INFO = v_member, ITEM_CODE = v_item)
+                qs_cnt = qs.count()
+                if qs_cnt == 1:
+                # if qs:
+                    
+                    item_dic['MARKET_INFO'] = qs.MARKET_INFO
+                    item_dic['PRODUCT_INFO']= qs.PRODUCT_INFO
+                    item_dic['MEMBER_INFO'] = qs.MEMBER_INFO
+                    item_dic['TRADE_DATE']  = qs.TRADE_DATE
+                    item_dic['TRADE_DATE']  = qs.TRADE_DATE
+                    item_dic['ITEM_GROUP']  = qs.ITEM_GROUP
+                    item_dic['ITEM_CODE']   = qs.ITEM_CODE
+                    item_dic['ITES_SEQ']    = qs.ITEM_SEQ
+                    item_dic['END_BUT']     = qs.END_BIT
+                    item_dic['ERROR_CODE']  = constant.CHECK_OK 
+                    item_dic['ERROR_TEXT']  = constant.CHECK_OK
+                    
+                    self.logger.info('# Query exist O.K !!' )
+                    self.logger.info('# Input v_market[%s]' % v_market)
+                    self.logger.info('# Input v_product[%s]' % v_product)
+                    self.logger.info('# Input v_member[%s]' % v_member)
+                    self.logger.info('# DB MARKET_INFO[%s]' % item_dic['MARKET_INFO'])
+                    self.logger.info('# DB PRODUCT_INFO[%s]'% item_dic['PRODUCT_INFO'])
+                    self.logger.info('# DB MEMBER_INFO[%s]' % item_dic['MEMBER_INFO'])
+            except ObjectDoesNotExist as err:
+                    self.logger.error('# DB[TBCP_MEMBER_LIST_STAT_INFO] ObjectDoesNotExist ')
+                    self.logger.info('# Input v_market[%s]' % v_market)
+                    self.logger.info('# Input v_product[%s]' % v_product)
+                    self.logger.info('# Input v_member[%s]' % v_member)
+                    self.logger.info('# DB MARKET_INFO[%s]' %item_dic['MARKET_INFO'])
+                    self.logger.info('# DB PRODUCT_INFO[%s]' %item_dic['PRODUCT_INFO'])
+                    self.logger.info('# DB MEMBER_INFO[%s]' %item_dic['MEMBER_INFO'])
+                    return HttpResponse('DB[TBCP_MEMBER_LIST_STAT_INFO] ObjectDoesNotExist : {}'.format(ObjectDoesNotExist))
+            else :
+                self.logger.info('#---------Result------------' )
+                self.logger.info('# MEMBER_ASK_CNT[%s] Before' %qs.MEMBER_ASK_CNT)
+                qs.MEMBER_ASK_CNT = qs.MEMBER_ASK_CNT + 1
+                qs.save()
+                self.logger.info('# MEMBER_ASK_CNT[%s] After' %qs.MEMBER_ASK_CNT)
+                if qs:
+                    self.logger.info('# Finds Query Data [%s]' %temp_path )
+                    # return Response(item_dic)
+                    return Response(qs.values())
+                else:
+                    self.logger.critical('# No Finds Query Data [%s]' %temp_path )
+                    return Response('No Finds Query Data, Check the path & system, please !! [{}]'.format(temp_path), status=status.HTTP_400_BAD_REQUEST)
+                #    return HttpResponse('No Finds Query Data, Check the path & system, please !! [{}]'.format(temp_path))
+        else:
+            # all, RISK, CLEARING ....
+            qs = TBCP_ITEM_META_INFO.objects.filter(ITEM_GROUP=v_item)
+            if qs or v_item =='all':
+                print('그룹입력[%s] ' %v_item)
+                # Query Memeber's List Data Group information 
+                try:
+                    qs = TBCP_MEMBER_LIST_STAT_INFO.objects.all()
+                    if v_item =='all':
+                        qs = qs.filter(MARKET_INFO = v_market, PRODUCT_INFO = v_product, MEMBER_INFO = v_member)
+                    else:
+                        qs = qs.filter(MARKET_INFO = v_market, PRODUCT_INFO = v_product, MEMBER_INFO = v_member, ITEM_GROUP=v_item)
 
-            if qs:
-                self.logger.info('# Finds Query Data [%s]' %temp_path )
-                return Response(item_dic)
-                # return HttpResponse('Finds Query Data {}'.format(temp_path))
+                    if qs: 
+                        cnt = qs.count()
+                        print('cnt %s' %cnt)
+                        print('qs.value() [%s]' %qs.values())
+                        print('qs.row(pk=1) : %s' %qs.values())
 
+                        # case : As using 'qs.ojbects.all()' 
+                        # for item in qs:
+                        #     item_dic['MARKET_INFO'] = item.MARKET_INFO
+                        #     item_dic['PRODUCT_INFO'] = item.PRODUCT_INFO
+                        #     item_dic['MEMBER_INFO'] = item.MEMBER_INFO
+                        # item_dic.update = ({'MARKET_INFO':qs.MARKET_INFO})
+                        item_list = []
+
+                        for item in qs:
+                            print ('@@ item loop')
+                            temp= '{"MARKET_INFO":"%s"}' %item.MARKET_INFO
+                            item_list.append (temp)
+                            temp = '{"PRODUCT_INFO":"%s"}' %item.PRODUCT_INFO
+                            item_list.append (temp) 
+                        
+                        # for key, value in item_dic.items():
+                            # print(key, value)   
+                        # return Response('all querying : %s' %item_list)
+                        # return Response('all querying : %s' %qs.values())
+                        return Response(qs.values())
+                    else:
+                        return Response(' not equal - qs ')
+                except ObjectDoesNotExist as err:
+                        self.logger.error('# DB[TBCP_MEMBER_LIST_STAT_INFO] ObjectDoesNotExist ')
+                        self.logger.info('# Input v_market[%s]' % v_market)
+                        self.logger.info('# Input v_product[%s]' % v_product)
+                        self.logger.info('# Input v_member[%s]' % v_member)
+                        self.logger.info('# DB MARKET_INFO[%s]' %item_dic['MARKET_INFO'])
+                        self.logger.info('# DB PRODUCT_INFO[%s]' %item_dic['PRODUCT_INFO'])
+                        self.logger.info('# DB MEMBER_INFO[%s]' %item_dic['MEMBER_INFO'])
+                        return HttpResponse('DB[TBCP_MEMBER_LIST_STAT_INFO] ObjectDoesNotExist : {}'.format(ObjectDoesNotExist))
+
+                else :
+                    self.logger.info('#---------Result------------' )
+                    self.logger.info('# MEMBER_ASK_CNT[%s] Before' %qs.MEMBER_ASK_CNT)
+                    qs.MEMBER_ASK_CNT = qs.MEMBER_ASK_CNT + 1
+                    qs.save()
+                    self.logger.info('# MEMBER_ASK_CNT[%s] After' %qs.MEMBER_ASK_CNT)
+                    if qs:
+                        self.logger.info('# Finds Query Data [%s]' %temp_path )
+                        return Response(item_dic)
+                    else:
+                        self.logger.critical('# No Finds Query Data [%s]' %temp_path )
+                        return Response('No Finds Query Data, Check the path & system, please !! [{}]'.format(temp_path), status=status.HTTP_400_BAD_REQUEST)
             else:
-               self.logger.critical('# No Finds Query Data [%s]' %temp_path )
-               return HttpResponse('No Finds Query Data, Check the path & system, please !! [{}]'.format(temp_path))
+                print(' check the item_code: %s' %v_item)
+                return HttpResponse('check the item [%s] '%v_item)
+            
+
 
 
 
